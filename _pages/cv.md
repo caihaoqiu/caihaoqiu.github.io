@@ -28,7 +28,7 @@ Experience
 * 12/2026-01/2027: Postdoctoral fellow, Department of Materials and Energy, The University of Hong Kong
 * 12/2025-11/2026: Postdoctoral fellow, Department of Mechanical Engineering, The University of Hong Kong
 
-Publications[Google Scholar](https://scholar.google.com/citations?hl=en&user=B7N1cSMAAAAJ/)
+[Publications](https://scholar.google.com/citations?hl=en&user=B7N1cSMAAAAJ/)
 ======
 * **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” *Acta Materialia*, 317, 122494, 2026.
 * A. Qiu, **C. Qiu**, I. Chesser, J. Han, D. J. Srolovitz, and E. A. Holm. “Mechanisms of shape evolution and rotation during crystal growth in cylindrical grains.” *Acta Materialia*, 305, 121840, 2026.
