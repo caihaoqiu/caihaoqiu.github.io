@@ -48,16 +48,35 @@ Publications
   
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+* C. Qiu, “Instability in Constrained Plastic Deformation Near Interfaces”, 12th International Conference on Multiscale Materials Modeling (MMM12), Jeju, South Korea. **(Invited Talk)**	Nov 2026
+* C. Qiu, “Revisiting grain growth: the impact of internal stress on grain boundary migration”, 9th International Conference on Recrystallization and Grain Growth (Rex&GG), Hamilton, Canada.	 May 2026
+* C. Qiu, “Revisiting grain growth: the impact of internal stress on grain boundary migration”, TMS 2026 Annual Meeting & Exhibition, San Diego, United States. **(Invited Talk)**	Mar 2026
+* C. Qiu, “Modelling the effects of internal stress on microstructure evolution at the meso-scale”, 11th International Conference on Multiscale Materials Modeling (MMM11), Prague, Czech.	 Sep 2024
+* C. Qiu, “Grain growth controlled by disconnection-mediated interface migration”, 5th International Symposium on Phase-Field Modeling in Materials Science (PF24), Hangzhou, China.	May 2024
+* C. Qiu, “A Continuum Model for Disconnection-Mediated Interface Migration: Application to the Interface Faceting-Defaceting Behavior”, 93rd Annual Meeting of the International Association of Applied Mathematics and Mechanics (GAMM), Dresden, Germany.	May 2023
+
   
-Teaching
+Teaching Assistantship
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Spring, 2023: Phase Transformation in Materials, PhD course (CityUHK)
+* Fall, 2023:   Structural Properties of Materials, PhD course (CityUHK)
+* Fall, 2024:   Thin Film Technology and Nanocrystalline Coatings, Master course (CityUHK)
+
+Prizes and Awards
+======
+* Outstanding Research/PhD Thesis Award, City University of Hong Kong, 2025
+* Research Tuition Scholarship, City University of Hong Kong, 2024
+* Graduation with Honor: Graduate Excellence Award of Shanghai, Government of Shanghai, 2021
+* Outstanding Bachelor thesis, Shanghai Jiao Tong University, 2021
+* China National Scholarship, Ministry of Education of PR China, 2020
+
+
   
-Service and leadership
+Professional Activities
 ======
-* Currently signed in to 43 different slack teams
+Manuscript reviewer for journals: 
+* Proceedings of the National Academy of Sciences
+* Acta Materialia
+* Materials Research Letters
+* Newton
+
