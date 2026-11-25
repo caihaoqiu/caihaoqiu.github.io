@@ -1,4 +1,4 @@
-<img width="468" height="12" alt="image" src="https://github.com/user-attachments/assets/972b6ebd-71c1-4aea-9cc7-0350be3d7bed" /><img width="468" height="12" alt="image" src="https://github.com/user-attachments/assets/bca1475a-73f3-4a69-8962-8cb7825c1972" />---
+---
 layout: archive
 title: "CV"
 permalink: /cv/
@@ -8,6 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
+
+#[Download Full CV (PDF)](/files/CV.pdf){: .btn .btn--info}
 
 Education
 ======
@@ -26,7 +28,7 @@ Experience
 * 12/2026-01/2027: Postdoctoral fellow, Department of Materials and Energy, The University of Hong Kong
 * 12/2025-11/2026: Postdoctoral fellow, Department of Mechanical Engineering, The University of Hong Kong
 
-Publications
+Publications[Google Scholar](https://scholar.google.com/citations?hl=en&user=B7N1cSMAAAAJ/)
 ======
 * **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” *Acta Materialia*, 317, 122494, 2026.
 * A. Qiu, **C. Qiu**, I. Chesser, J. Han, D. J. Srolovitz, and E. A. Holm. “Mechanisms of shape evolution and rotation during crystal growth in cylindrical grains.” *Acta Materialia*, 305, 121840, 2026.
@@ -70,8 +72,6 @@ Prizes and Awards
 * Outstanding Bachelor thesis, Shanghai Jiao Tong University, 2021
 * China National Scholarship, Ministry of Education of PR China, 2020
 
-
-  
 Professional Activities
 ======
 Manuscript reviewer for journals: 
