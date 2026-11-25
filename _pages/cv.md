@@ -1,4 +1,4 @@
----
+<img width="468" height="12" alt="image" src="https://github.com/user-attachments/assets/972b6ebd-71c1-4aea-9cc7-0350be3d7bed" /><img width="468" height="12" alt="image" src="https://github.com/user-attachments/assets/bca1475a-73f3-4a69-8962-8cb7825c1972" />---
 layout: archive
 title: "CV"
 permalink: /cv/
@@ -11,35 +11,20 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
-
-Work experience
+* Ph.D in Materials Science and Engineering, City University of Hong Kong, 2025
+  * Advisors: Prof. David J. Srolovitz (HKU, formerly at CityUHK) and Prof. Jian Han (CityUHK)
+  * Committee: Prof. Ke Lu (IMR, CAS), Prof. Christopher A. Schuh (MIT), and Prof. Yong Yang (CityUHK)
+  * Outstanding PhD thesis award
+    
+* B.S. in Materials Science and Engineering, Shanghai Jiao Tong University, 2021
+  * Advisors: Prof. Di Zhang (SJTU) and Prof. Yishi Su (SJTU)
+  * Outstanding Bachelor thesis award
+    
+Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 02/2027-: Postdoctoral fellow, Department of Materials, ETH Zurich
+* 12/2026-01/2027: Postdoctoral fellow, Department of Materials and Energy, The University of Hong Kong
+* 12/2025-11/2026: Postdoctoral fellow, Department of Mechanical Engineering, The University of Hong Kong
 
 Publications
 ======
