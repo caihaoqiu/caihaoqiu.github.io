@@ -23,7 +23,7 @@ repository               : "caihaoqiu/caihaoqiu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Photo.jpg"
   name             : *name 
   pronouns         : "he/him"  
   bio              : "Postdoctoral Fellow in Materials Theory and Computational Materials Science"
