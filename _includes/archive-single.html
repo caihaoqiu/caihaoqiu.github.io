@@ -27,7 +27,7 @@
     {% endif %}
 
     {% if post.collection == 'publications' %}
-      <!-- Compact Title (Smaller Font, Tighter Line Height) -->
+      <!-- Compact Title -->
       <div class="archive__item-title" itemprop="headline" style="font-size: 0.98em; font-weight: 600; line-height: 1.35; margin: 0 0 0.2em 0;">
         {% if post.paperurl %}
           <a href="{{ post.paperurl }}" target="_blank" style="text-decoration: none;">{{ title }}</a>
@@ -45,7 +45,7 @@
         </div>
       {% endif %}
 
-      <!-- Venue, Year & Direct DOI/Paper Link on One Compact Line -->
+      <!-- Venue, Year & Direct DOI/Paper Link -->
       <div style="font-size: 0.83em; color: #666; line-height: 1.35; margin: 0;">
         {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
         {% if post.paperurl %} &nbsp;|&nbsp; <a href="{{ post.paperurl }}" target="_blank">[Paper / DOI]</a>{% endif %}
@@ -53,8 +53,24 @@
         {% if post.bibtexurl %} &nbsp;|&nbsp; <a href="{{ post.bibtexurl }}" target="_blank">[BibTeX]</a>{% endif %}
       </div>
 
+    {% elsif post.collection == 'talks' %}
+      <!-- Compact Talk Title -->
+      <div class="archive__item-title" itemprop="headline" style="font-size: 0.98em; font-weight: 600; line-height: 1.35; margin: 0 0 0.2em 0;">
+        {% if post.link %}
+          <a href="{{ post.link }}" target="_blank" style="text-decoration: none;">{{ title }}</a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink" style="text-decoration: none;">{{ title }}</a>
+        {% endif %}
+      </div>
+
+      <!-- Talk Type, Venue, Location & Date on One Compact Line -->
+      <div style="font-size: 0.84em; color: #555; line-height: 1.35; margin: 0;">
+        {% if post.type %}<strong>{{ post.type }}</strong>{% endif %}{% if post.venue %}, <i>{{ post.venue }}</i>{% endif %}{% if post.location %}, {{ post.location }}{% endif %}{% if post.date %} &nbsp;|&nbsp; {{ post.date | date: "%b %Y" }}{% endif %}
+        {% if post.slidesurl %} &nbsp;|&nbsp; <a href="{{ post.slidesurl }}" target="_blank">[Slides]</a>{% endif %}
+      </div>
+
     {% else %}
-      <!-- Standard Layout for Talks, Teaching, and Posts -->
+      <!-- Standard Layout for Teaching and Posts -->
       <h2 class="archive__item-title" itemprop="headline">
         {% if post.link %}
           <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -69,9 +85,6 @@
 
       {% if post.collection == 'teaching' %}
         <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-      {% elsif post.collection == 'talks' %}
-        <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>
-        <p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}}</p>
       {% elsif post.date %}
         <p class="page__meta"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
       {% endif %}
