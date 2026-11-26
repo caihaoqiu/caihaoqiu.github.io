@@ -167,15 +167,18 @@ We modified the curvature-driven grain growth with a defect-dynamics-based frame
 </div>
 
 Plastic deformation near interfaces is central to the mechanical response and microstructure evolution of many material systems. 
-Such interfacemediated plasticity arises in heterogeneous materials, tribological contacts, and surface deformation processes. 
+Such interface-mediated plasticity arises in bulk polycrystalline materials, heterogeneous materials, tribological contacts, and surface deformation processes. 
 In some contexts, it governs the ability of materials to sustain deformation without failure; in others, it is deliberately exploited to generate defect structures, recrystallization, and tailored microstructures with enhanced properties. 
 Understanding how interfaces control plastic flow is therefore a fundamental problem in materials science.
 
+We explored
 
 
-Investigating the mechanisms governing microstructure evolution in polycrystals (i.e., grain growth and static/dynamic recrystallization), and developing theories, mechanism-based continuum models, and numerical methods to predict microstructure evolution in polycrystalline materials.
-
-
+**References**
+1. **C. Qiu**, W. Zheng, M. Salvalaglio, Y. Su, Q, Guo, D. Zhang, J. Han, and D. J. Srolovitz. “Inside interface-mediated plasticity.” *Submitted*, (2026).
+2. **C. Qiu**, Y. Su, J. Yang, X. Wang, B. Chen, Q. Ouyang, and D. Zhang. “Microstructural characteristics and mechanical behavior of SiC(CNT)/Al multiphase interfacial micro-zones via molecular dynamics simulations.” *Composites Part B: Engineering*, 220 (2021) 108996.
+3. X. Wang, Y. Su, **C. Qiu**, C. Zhu, X. Wang, H. Cao, D.Zhang, Q. Ouyang. “Mechanical behavior and interfacial micro-zones of SiCp (CNT) hybrid reinforced aluminum matrix composites.” *Materials Characterization*, 189 (2023) 111982.
+4. **C. Qiu**, Y. Su, B. Chen, J. Yang, Z. Li, Q. Ouyang, Q. Guo, D. Xiong, D. Zhang, “First-principles investigation of interfacial stability, mechanical behavior and failure mechanism of β-SiC(1 1 1)/Al(1 1 1) interfaces.” *Computational Materials Science*, 175 (2020) 109608. 
 
 
 
@@ -199,6 +202,12 @@ Investigating the mechanisms governing microstructure evolution in polycrystals 
 
 Investigating defect dynamics, microstructure evolution, and mechanical/functional properties under far-from-equilibrium conditions, including rapid quenching, severe plastic deformation, impact loading, oscillatory driving, and strong temperature gradients.
 
+
+**References**
+1. **C. Qiu**, M. Punke, Y. Tian, Y. Han, S. Wang, Y. Su, M. Salvalaglio, X. Pan, D. J. Srolovitz, and J. Han. “Grain boundaries are Brownian ratchets.” *Science*, 385 (2024) 980–985.
+
+
+
 ### Bio-inspired Architected and Heterostructured Materials
 
 <div class="fig-carousel">
@@ -219,6 +228,14 @@ Investigating defect dynamics, microstructure evolution, and mechanical/function
 
 Designing heterogeneous microstructures in polycrystalline and composite materials inspired by natural architectures (e.g., nacre, bamboo, leaves, and butterfly-wing scales) to overcome conventional property trade-offs and achieve multifunctionality.
 
+
+**References**
+1. J. Yang, **C. Qiu**, Y. Su, Z. Lin, X. Chai, X. Liu, L. Zhao, Q. Ouyang, and D. Zhang. “Crystal plasticity finite element modelling and mechanical deformation mechanism of nanolaminated graphene reinforced metal matrix composites.” *Composites Communications*, 44 (2023) 101768.
+2. **C. Qiu**, Y. Su, J. Yang, B. Chen, Q. Ouyang, and D. Zhang. “Structural modelling and mechanical behaviors of graphene/carbon nanotubes reinforced metal matrix composites via atomic-scale simulations: A review.” *Composites Part C: Open Access*, 4 (2021) 100120.
+
+
+
+
 ### Physics-informed AI-assisted Materials Design
 
 <div class="fig-carousel">
@@ -238,6 +255,24 @@ Designing heterogeneous microstructures in polycrystalline and composite materia
 </div>
 
 Integrating physical laws and mechanistic models with deep learning to efficiently navigate large processing and microstructure parametric spaces, combining predictive accuracy with mechanistic interpretability and advancing toward autonomous materials design.
+
+
+
+**References**
+1. X. Chai, Y.Su, Z. Lin, **C. Qiu**, X. Liu, X. Zhang, J. Yang, Q. Ouyang, and D. Zhang. “Mechanical property prediction and configuration effect exploration of particulate reinforced metal matrix composites via an interpretable deep learning approach.” *Materials Science and Engineering A*, 925 (2025) 147880.
+2. Z. Lin, Y. Su, **C. Qiu**, J. Yang, X. Chai, X. Liu, Q. Ouyang, and D. Zhang. “Configuration effect and mechanical behavior of particle reinforced aluminum matrix composites.” Scripta Materialia, 224 (2023) 115135.
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
 window.moveFigSlide = function(btn, step) {
