@@ -10,6 +10,16 @@ var addressPoints = [
     126.4987083
   ],
   [
+    "Grain Boundary Dynamics: A Disconnection-Based Continuum Model Integrating Capillary and Stress Effects for Microstructure Evolution<br />TMS 2026 Annual Meeting & Exhibition; San Diego, CA, USA",
+    32.7157062,
+    -117.1638284
+  ],
+  [
+    "A Continuum Model for Disconnection-Mediated Grain Boundary Migration and Application in Microstructure Evolution<br />2025 MRS Fall Meeting & Exhibit; Boston, MA, USA",
+    42.3588336,
+    -71.0578303
+  ],
+  [
     "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
     37.8708393,
     -122.272863
