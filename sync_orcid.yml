@@ -1,0 +1,34 @@
+name: Sync Publications from ORCID
+
+on:
+  schedule:
+    - cron: '0 2 * * 0' # Runs automatically every Sunday at 02:00 UTC
+  workflow_dispatch:      # Adds a "Run workflow" button so you can trigger it anytime
+
+permissions:
+  contents: write
+
+jobs:
+  sync-orcid:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run ORCID sync script
+        run: python markdown_generator/sync_orcid.py
+
+      - name: Commit and push updated publications
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@://github.com"
+          git add _publications/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Sync publications from ORCID" && git push)
