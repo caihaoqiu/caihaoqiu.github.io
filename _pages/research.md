@@ -8,55 +8,28 @@ author_profile: true
 {% include base_path %}
 
 <style>
-  /* Main Page Title (About Me font size + spacing) */
-  .page__content h1,
-  .archive .page__title {
+  .page__content h1, .archive .page__title {
     font-size: 1.4em !important;
     margin-bottom: 0.5em !important;
   }
-
-  /* Section Headings (About Me 1.18em font size + CV spacing & underline) */
-  .page__content h2,
-  .page__content h3,
-  .archive h1:not(.page__title),
-  .archive h2,
-  .archive h3 {
+  .page__content h2, .page__content h3, .archive h1:not(.page__title), .archive h2, .archive h3 {
     font-size: 1.18em !important;
     border-bottom: 1px solid #888 !important;
     padding-bottom: 0.25em !important;
     margin-top: 1.4em !important;
     margin-bottom: 0.6em !important;
   }
-
-  /* Body Text & List Items (About Me 0.88em font size + CV 1.5 line spacing) */
-  .page__content p,
-  .page__content ul li,
-  .page__content ol li,
-  .archive p,
-  .archive ul li,
-  .archive ol li {
+  .page__content p, .page__content ul li, .page__content ol li, .archive p, .archive ul li, .archive ol li {
     font-size: 0.88em !important;
     line-height: 1.5 !important;
   }
-
-  /* List Block Spacing (CV spacing) */
-  .page__content ul,
-  .page__content ol,
-  .archive ul,
-  .archive ol {
+  .page__content ul, .page__content ol, .archive ul, .archive ol {
     margin-top: 0.25em !important;
     margin-bottom: 0.75em !important;
   }
-
-  /* Prevent Nested Sub-Bullets from Shrinking Twice */
-  .page__content li ul li,
-  .page__content li ol li,
-  .archive li ul li,
-  .archive li ol li {
+  .page__content li ul li, .page__content li ol li, .archive li ul li, .archive li ol li {
     font-size: 1em !important;
   }
-
-  /* Rolling Figure Gallery Styles */
   .fig-carousel {
     position: relative;
     width: 100%;
@@ -71,7 +44,7 @@ author_profile: true
   .fig-slide {
     min-width: 100%;
     box-sizing: border-box;
-    padding: 0 2.2rem; /* leaves room for side arrows */
+    padding: 0 2.2rem;
   }
   .fig-slide img {
     max-width: 85%;
@@ -93,14 +66,16 @@ author_profile: true
     background: rgba(55, 55, 55, 0.8);
     color: #fff;
     border: none;
-    width: 26px;
-    height: 36px;
+    width: 28px;
+    height: 38px;
     cursor: pointer;
     font-size: 0.95rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    z-index: 99 !important;
+    pointer-events: auto !important;
+    padding: 0 !important;
   }
   .fig-btn:hover {
     background: rgba(20, 20, 20, 0.95);
@@ -123,7 +98,6 @@ author_profile: true
   }
 </style>
 
-
 ### Thermodynamics and Kinetics of Interfaces and Interface-Mediated Plasticity
 
 <div class="fig-carousel">
@@ -139,16 +113,14 @@ author_profile: true
     <div class="fig-slide">
       <img src="/images/research/rotation.svg" alt="Third figure" />
       <div class="fig-caption">Fig. 3: Grain rotation during grain growth mediated by disconnection</div>
-    </div> <!-- <-- THIS CLOSING TAG WAS MISSING -->
+    </div>
   </div>
-  <button class="fig-btn fig-prev" aria-label="Previous">&#10094;</button>
-  <button class="fig-btn fig-next" aria-label="Next">&#10095;</button>
+  <button type="button" class="fig-btn fig-prev" onclick="moveFigSlide(this, -1)" aria-label="Previous">&#10094;</button>
+  <button type="button" class="fig-btn fig-next" onclick="moveFigSlide(this, 1)" aria-label="Next">&#10095;</button>
   <div class="fig-dots"></div>
 </div>
 
-
 Developing theoretical, bicrystallography-respecting, disconnection-mechanism-based continuum models to describe interface/grain boundary thermodynamics (e.g., interface/GB energy and equilibrium interface/GB structure); diffusive and non-diffusive interface/GB kinetics (e.g., interface/GB diffusion, faceting-defaceting, roughening, and migration); and interface-mediated plasticity (e.g., dislocation–interface interactions). 
-
 
 ### Microstructure Evolution in Polycrystals
 
@@ -163,13 +135,12 @@ Developing theoretical, bicrystallography-respecting, disconnection-mechanism-ba
       <div class="fig-caption">Fig. 2: Description of second polycrystal figure</div>
     </div>
   </div>
-  <button class="fig-btn fig-prev" aria-label="Previous">&#10094;</button>
-  <button class="fig-btn fig-next" aria-label="Next">&#10095;</button>
+  <button type="button" class="fig-btn fig-prev" onclick="moveFigSlide(this, -1)" aria-label="Previous">&#10094;</button>
+  <button type="button" class="fig-btn fig-next" onclick="moveFigSlide(this, 1)" aria-label="Next">&#10095;</button>
   <div class="fig-dots"></div>
 </div>
 
 Investigating the mechanisms governing microstructure evolution in polycrystals (i.e., grain growth and static/dynamic recrystallization), and developing theories, mechanism-based continuum models, and numerical methods to predict microstructure evolution in polycrystalline materials.
-
 
 ### Materials Behavior under Far-from-Equilibrium Conditions
 
@@ -184,13 +155,12 @@ Investigating the mechanisms governing microstructure evolution in polycrystals 
       <div class="fig-caption">Fig. 2: Description of second far-from-equilibrium figure</div>
     </div>
   </div>
-  <button class="fig-btn fig-prev" aria-label="Previous">&#10094;</button>
-  <button class="fig-btn fig-next" aria-label="Next">&#10095;</button>
+  <button type="button" class="fig-btn fig-prev" onclick="moveFigSlide(this, -1)" aria-label="Previous">&#10094;</button>
+  <button type="button" class="fig-btn fig-next" onclick="moveFigSlide(this, 1)" aria-label="Next">&#10095;</button>
   <div class="fig-dots"></div>
 </div>
 
 Investigating defect dynamics, microstructure evolution, and mechanical/functional properties under far-from-equilibrium conditions, including rapid quenching, severe plastic deformation, impact loading, oscillatory driving, and strong temperature gradients.
-
 
 ### Bio-inspired Architected and Heterostructured Materials
 
@@ -205,13 +175,12 @@ Investigating defect dynamics, microstructure evolution, and mechanical/function
       <div class="fig-caption">Fig. 2: Description of second bio-inspired figure</div>
     </div>
   </div>
-  <button class="fig-btn fig-prev" aria-label="Previous">&#10094;</button>
-  <button class="fig-btn fig-next" aria-label="Next">&#10095;</button>
+  <button type="button" class="fig-btn fig-prev" onclick="moveFigSlide(this, -1)" aria-label="Previous">&#10094;</button>
+  <button type="button" class="fig-btn fig-next" onclick="moveFigSlide(this, 1)" aria-label="Next">&#10095;</button>
   <div class="fig-dots"></div>
 </div>
 
 Designing heterogeneous microstructures in polycrystalline and composite materials inspired by natural architectures (e.g., nacre, bamboo, leaves, and butterfly-wing scales) to overcome conventional property trade-offs and achieve multifunctionality.
-
 
 ### Physics-informed AI-assisted Materials Design
 
@@ -226,70 +195,55 @@ Designing heterogeneous microstructures in polycrystalline and composite materia
       <div class="fig-caption">Fig. 2: Description of second AI-assisted design figure</div>
     </div>
   </div>
-  <button class="fig-btn fig-prev" aria-label="Previous">&#10094;</button>
-  <button class="fig-btn fig-next" aria-label="Next">&#10095;</button>
+  <button type="button" class="fig-btn fig-prev" onclick="moveFigSlide(this, -1)" aria-label="Previous">&#10094;</button>
+  <button type="button" class="fig-btn fig-next" onclick="moveFigSlide(this, 1)" aria-label="Next">&#10095;</button>
   <div class="fig-dots"></div>
 </div>
 
 Integrating physical laws and mechanistic models with deep learning to efficiently navigate large processing and microstructure parametric spaces, combining predictive accuracy with mechanistic interpretability and advancing toward autonomous materials design.
 
-
 <script>
-  document.querySelectorAll('.fig-carousel').forEach((carousel) => {
-    const track = carousel.querySelector('.fig-track');
-    const slides = carousel.querySelectorAll('.fig-slide');
-    const dotsContainer = carousel.querySelector('.fig-dots');
-    const prevBtn = carousel.querySelector('.fig-prev');
-    const nextBtn = carousel.querySelector('.fig-next');
-    let index = 0;
-    let timer;
-
-    // Hide arrows & dots if a section only has 1 picture so far
+window.moveFigSlide = function(btn, step) {
+  var c = btn.closest('.fig-carousel');
+  if (c && c._goTo) c._goTo(c._idx + step);
+};
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.fig-carousel').forEach(function(c) {
+    var track = c.querySelector('.fig-track');
+    var slides = c.querySelectorAll('.fig-slide');
+    var dotsBox = c.querySelector('.fig-dots');
+    var prev = c.querySelector('.fig-prev');
+    var next = c.querySelector('.fig-next');
+    var timer;
+    c._idx = 0;
     if (slides.length <= 1) {
-      prevBtn.style.display = 'none';
-      nextBtn.style.display = 'none';
+      if (prev) prev.style.display = 'none';
+      if (next) next.style.display = 'none';
       return;
     }
-
-    slides.forEach((_, i) => {
-      const dot = document.createElement('span');
-      dot.className = 'fig-dot';
-      dot.onclick = () => goToSlide(i);
-      dotsContainer.appendChild(dot);
+    dotsBox.innerHTML = '';
+    slides.forEach(function(_, i) {
+      var d = document.createElement('span');
+      d.className = 'fig-dot';
+      d.onclick = function() { c._goTo(i); };
+      dotsBox.appendChild(d);
     });
-
-    function update() {
-      track.style.transform = `translateX(-${index * 100}%)`;
-      Array.from(dotsContainer.children).forEach((dot, i) => {
-        dot.style.background = i === index ? '#000000' : 'transparent';
-        dot.style.borderColor = i === index ? '#000000' : '#cccccc';
+    c._goTo = function(n) {
+      c._idx = (n + slides.length) % slides.length;
+      track.style.transform = 'translateX(-' + (c._idx * 100) + '%)';
+      Array.from(dotsBox.children).forEach(function(d, i) {
+        d.style.background = i === c._idx ? '#000' : 'transparent';
+        d.style.borderColor = i === c._idx ? '#000' : '#ccc';
       });
-    }
-
-    function moveSlide(step) {
-      index = (index + step + slides.length) % slides.length;
-      update();
-      resetTimer();
-    }
-
-    function goToSlide(i) {
-      index = i;
-      update();
-      resetTimer();
-    }
-
-    function resetTimer() {
       clearInterval(timer);
-      timer = setInterval(() => moveSlide(1), 5000);
-    }
-
-    prevBtn.onclick = () => moveSlide(-1);
-    nextBtn.onclick = () => moveSlide(1);
-
-    carousel.addEventListener('mouseenter', () => clearInterval(timer));
-    carousel.addEventListener('mouseleave', resetTimer);
-
-    update();
-    resetTimer();
+      timer = setInterval(function() { c._goTo(c._idx + 1); }, 5000);
+    };
+    c.addEventListener('mouseenter', function() { clearInterval(timer); });
+    c.addEventListener('mouseleave', function() {
+      clearInterval(timer);
+      timer = setInterval(function() { c._goTo(c._idx + 1); }, 5000);
+    });
+    c._goTo(0);
   });
+});
 </script>
