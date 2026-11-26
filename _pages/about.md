@@ -7,6 +7,33 @@ redirect_from:
   - /about.html
 ---
 
+<style>
+  .page__content h1 {
+    font-size: 1.35em !important;
+    margin-bottom: 0.5em !important;
+  }
+  .page__content h2,
+  .page__content h3 {
+    font-size: 1.1em !important;
+    margin-top: 1.3em !important;
+    margin-bottom: 0.5em !important;
+  }
+  .page__content p,
+  .page__content ul li,
+  .page__content ol li {
+    font-size: 0.8em !important;
+    line-height: 1.45 !important;
+  }
+  .page__content ul {
+    margin-top: 0.25em !important;
+    margin-bottom: 0.75em !important;
+  }
+  .page__content li ul li {
+    font-size: 1em !important;
+  }
+</style>
+
+
 I am currently a Postdoctoral Fellow in the Department of Mechanical Engineering at The University of Hong Kong (HKU), working with [Prof. David J. Srolovitz](https://mse.hku.hk/people/dsrolovitz/). 
 Prior to joining HKU, I received my Ph.D. degree in Materials Science and Engineering from City University of Hong Kong (CityUHK) in 2025, under the supervision of [Prof. Jian Han](https://scholars.cityu.edu.hk/en/persons/jianhan/) and [Prof. David J. Srolovitz](https://mse.hku.hk/people/dsrolovitz/).
 My B.S. degree in Materials Science and Engineering was awarded by Shanghai Jiao Tong University (SJTU) in 2021. 
