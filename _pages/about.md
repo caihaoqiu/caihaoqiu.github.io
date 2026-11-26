@@ -9,20 +9,20 @@ redirect_from:
 
 <style>
   .page__content h1 {
-    font-size: 1.35em !important;
+    font-size: 1.4em !important;
     margin-bottom: 0.5em !important;
   }
   .page__content h2,
   .page__content h3 {
-    font-size: 1.1em !important;
+    font-size: 1.18em !important;
     margin-top: 1.3em !important;
     margin-bottom: 0.5em !important;
   }
   .page__content p,
   .page__content ul li,
   .page__content ol li {
-    font-size: 0.8em !important;
-    line-height: 1.45 !important;
+    font-size: 0.88em !important;
+    line-height: 1.5 !important;
   }
   .page__content ul {
     margin-top: 0.25em !important;
