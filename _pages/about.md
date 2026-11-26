@@ -26,7 +26,7 @@ Designing heterogeneous microstructures in polycrystalline and composite materia
 Integrating physical laws and mechanistic models with deep learning to efficiently navigate large processing and microstructure parametric spaces, combining predictive accuracy with mechanistic interpretability and advancing toward autonomous materials design.
 
 
-### [Selected Publications](https://scholar.google.com/citations?user=B7N1cSMAAAAJ&hl=en)
+### Selected Publications <span style="font-size: 0.72em; font-weight: normal; margin-left: 0.5em;">(<a href="/publications/">Full list &rarr;</a>)</span>
 * **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” Acta Materialia, 317 (2026) 122494.
 * **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Why grain growth is not curvature flow.” Proceedings of the National Academy of Sciences, 122 (2025) e2500707122.
 * **C. Qiu**, M. Punke, Y. Tian, Y. Han, S. Wang, Y. Su, M. Salvalaglio, X. Pan, D. J. Srolovitz, and J. Han. “Grain boundaries are Brownian ratchets.” Science, 385 (2024) 980–985, .
