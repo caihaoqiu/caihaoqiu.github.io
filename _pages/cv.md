@@ -9,6 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
+Academic Appointments
+======
+* 02/2027-: Postdoctoral fellow, Department of Materials, ETH Zurich
+* 12/2026-01/2027: Postdoctoral fellow, Department of Materials and Energy, The University of Hong Kong
+* 12/2025-11/2026: Postdoctoral fellow, Department of Mechanical Engineering, The University of Hong Kong
+
 
 Education
 ======
@@ -21,13 +27,8 @@ Education
   * Advisors: Prof. Di Zhang (SJTU) and Prof. Yishi Su (SJTU)
   * Outstanding Bachelor thesis award
     
-Experience
-======
-* 02/2027-: Postdoctoral fellow, Department of Materials, ETH Zurich
-* 12/2026-01/2027: Postdoctoral fellow, Department of Materials and Energy, The University of Hong Kong
-* 12/2025-11/2026: Postdoctoral fellow, Department of Mechanical Engineering, The University of Hong Kong
 
-[Selected Publications](https://scholar.google.com/citations?hl=en&user=B7N1cSMAAAAJ/)
+Selected Publications<span style="font-size: 0.72em; font-weight: normal; margin-left: 0.5em;">(<a href="/publications/">Full list &rarr;</a>)</span>
 ======
 * **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” *Acta Materialia*, 317 (2026) 122494.
 * **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Why grain growth is not curvature flow.” *Proceedings of the National Academy of Sciences*, 122 (2025) e2500707122.
@@ -38,14 +39,10 @@ Experience
 * **C. Qiu**, Y. Su, J. Yang, X. Wang, B. Chen, Q. Ouyang, and D. Zhang. “Microstructural characteristics and mechanical behavior of SiC(CNT)/Al multiphase interfacial micro-zones via molecular dynamics simulations.” *Composites Part B: Engineering*, 220 (2021) 108996.
 
   
-Talks
+Invited Talks<span style="font-size: 0.72em; font-weight: normal; margin-left: 0.5em;">(<a href="/talks/">Full list &rarr;</a>)</span>
 ======
-* C. Qiu, “Instability in Constrained Plastic Deformation Near Interfaces”, 12th International Conference on Multiscale Materials Modeling (MMM12), Jeju, South Korea. **(Invited Talk)**	Nov 2026
-* C. Qiu, “Revisiting grain growth: the impact of internal stress on grain boundary migration”, 9th International Conference on Recrystallization and Grain Growth (Rex&GG), Hamilton, Canada.	 May 2026
-* C. Qiu, “Revisiting grain growth: the impact of internal stress on grain boundary migration”, TMS 2026 Annual Meeting & Exhibition, San Diego, United States. **(Invited Talk)**	Mar 2026
-* C. Qiu, “Modelling the effects of internal stress on microstructure evolution at the meso-scale”, 11th International Conference on Multiscale Materials Modeling (MMM11), Prague, Czech.	 Sep 2024
-* C. Qiu, “Grain growth controlled by disconnection-mediated interface migration”, 5th International Symposium on Phase-Field Modeling in Materials Science (PF24), Hangzhou, China.	May 2024
-* C. Qiu, “A Continuum Model for Disconnection-Mediated Interface Migration: Application to the Interface Faceting-Defaceting Behavior”, 93rd Annual Meeting of the International Association of Applied Mathematics and Mechanics (GAMM), Dresden, Germany.	May 2023
+* C. Qiu, “Inside Interface-Mediated Plasticity: Instability in Constrained Plastic Deformation Near Interfaces”, *12th International Conference on Multiscale Materials Modeling (MMM12)*, Jeju, South Korea. **(Invited Talk)**	Nov 2026
+* C. Qiu, “Revisiting Grain Growth: the Impact of Internal Stress on Grain Boundary Migration”, *TMS 2026 Annual Meeting & Exhibition*, San Diego, United States. **(Invited Talk)**	Mar 2026
 
 
 Prizes and Awards
