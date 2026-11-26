@@ -70,11 +70,10 @@ A central focus of my research is bridging continuum-scale microstructure evolut
 
 ### Research Interests <span style="font-size: 0.72em; font-weight: normal; margin-left: 0.5em;">(<a href="/research/">More details &rarr;</a>)</span>
 * Microstructure evolution in crystalline materials
-* Thermodynamics and kinetics of interfaces
-* Interface-mediated plasticity
 * Materials behavior under far-from-equilibrium conditions
-* Physics-informed AI framework for microstructure design
 * Heterostructured materials and nature-inspired structures
+* Physics-informed AI framework for microstructure design
+
 
 
 
