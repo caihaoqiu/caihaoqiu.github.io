@@ -114,6 +114,14 @@ author_profile: true
       <img src="/images/research/rotation.svg" alt="Third figure" />
       <div class="fig-caption">Fig. 3: Grain rotation during grain growth mediated by disconnection</div>
     </div>
+        <div class="fig-slide">
+      <img src="/images/research/GG1.svg" alt="Fourth figure" />
+      <div class="fig-caption">Fig. 4: Internal stress field evolution during grain growth and loss of correlation between GB velocity and curvature due to internal stress</div>
+    </div>
+    <div class="fig-slide">
+      <img src="/images/research/GG2.svg" alt="Fifth figure" />
+      <div class="fig-caption">Fig. 5: Statistics of grain growth considering shear coupling </div>
+    </div>
   </div>
   <button type="button" class="fig-btn fig-prev" onclick="moveFigSlide(this, -1)" aria-label="Previous">&#10094;</button>
   <button type="button" class="fig-btn fig-next" onclick="moveFigSlide(this, 1)" aria-label="Next">&#10095;</button>
@@ -128,17 +136,12 @@ Disconnection-description offers a unified description of GB kinetics, reconcili
 We demonstrate that disconnection-mediated GB migration intrinsically generates internal stress field that, in turn, act on GB migration, which firmly demonstrates that realistic grain growth is disconnection flow instead of classical curvature flow. 
 This work revised curvature-driven grain growth with a defect-dynamics-based framework, providing a unified and multiscale understanding of microstructure evolution.
 
-**Reference**
-
-[1] **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” *Acta Materialia*, 317 (2026) 122494.
-
-[2] **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Why grain growth is not curvature flow.” *Proceedings of the National Academy of Sciences*, 122 (2025) e2500707122.
-
-[3] **C. Qiu**, M. Salvalaglio, D. J. Srolovitz, and J. Han. “Disconnection flow–mediated grain rotation.” *Proceedings of the National Academy of Sciences*, 121 (2024) e2310302121.
-
-[4] Y. Tian, X. Gong, M. Xu, **C. Qiu**, Y. Han, Y. Bi, L. V. Estrada, E. Boltynjuk, H. Hahn, J. Han, D. J. Srolovitz, and X. Pan. “Grain rotation mechanisms in nanocrystalline materials: Multiscale observations in Pt thin films.” *Science*, 386 (2024) 49–54.
-
-[5] **C. Qiu**, M. Salvalaglio, D. J. Srolovitz, and J. Han. “Interface faceting–defaceting mediated by disconnections.” *Acta Materialia*, 251 (2023) 118880.
+**References**
+1. **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” *Acta Materialia*, 317 (2026) 122494.
+2. **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Why grain growth is not curvature flow.” *Proceedings of the National Academy of Sciences*, 122 (2025) e2500707122.
+3. **C. Qiu**, M. Salvalaglio, D. J. Srolovitz, and J. Han. “Disconnection flow–mediated grain rotation.” *Proceedings of the National Academy of Sciences*, 121 (2024) e2310302121.
+4. Y. Tian, X. Gong, M. Xu, **C. Qiu**, Y. Han, Y. Bi, L. V. Estrada, E. Boltynjuk, H. Hahn, J. Han, D. J. Srolovitz, and X. Pan. “Grain rotation mechanisms in nanocrystalline materials: Multiscale observations in Pt thin films.” *Science*, 386 (2024) 49–54.
+5. **C. Qiu**, M. Salvalaglio, D. J. Srolovitz, and J. Han. “Interface faceting–defaceting mediated by disconnections.” *Acta Materialia*, 251 (2023) 118880.
 
 
 ### Interface-Mediated Plasticity and Recrystallization Mechanism
