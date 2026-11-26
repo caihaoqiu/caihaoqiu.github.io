@@ -129,11 +129,10 @@ author_profile: true
 </div>
 
 Grain growth in crystalline materials can be described by the motion of grain boundaries (or more generally, interfaces); hence, GB kinetics is theoretically important for understanding, predicting and controlling microstructure evolution. 
-GB motion through mean curvature flow is considered in classical approaches developed by John von Neumann and William W. Mullins in 1950s, for which only the reduction of total interface free energy is accounted for. 
-However, the classical mean curvature flow-description of grain growth fails to explain numerous experimentally observed phenomena. 
-For instance, internal stress is usually generated along with GB motion, and externally applied stress can drive GB motion. 
-As widely accepted in recent years, disconnections (line defects constrained on GBs possessing both step and/or dislocation character) mediate GB motion and provide a unified description of GB kinetics, reconciling capillarity and stress effects on GB motion.
+GB motion through mean curvature flow is considered in classical approaches developed by John von Neumann and William W. Mullins in 1950s, for which only the reduction of total GB free energy is accounted for. 
+However, the classical mean curvature flow-description of grain growth fails to explain numerous experimentally observed phenomena, e.g., shear-coupled GB migration, grain rotation, low correlation between GB velocity and mean curvature, and internal stress generation along with GB motion, etc. 
 
+As widely accepted in recent years, disconnections (line defects constrained on GBs possessing both step and/or dislocation character) mediate GB motion and provide a unified description of GB kinetics, reconciling capillarity and stress effects on GB motion.
 We resolved the longstanding discrepancies between theory and experiment by **developing a disconnection-based and bicrystallography-respecting equation of motion for grain boundary (GB) migration** and implement it into continuum front-tracking and phase-field frameworks. 
 We demonstrate that disconnection flow along the GBs naturally governs GB faceting-defaceting transition, induces grain rotation and GB sliding, generates internal stress fields, stagnates grain growth, uncorrelates GB velocity and GB mean curvature, and leads to grain growth statistics consistent with experimental measurements.
 This work firmly demonstrated that realistic grain growth is disconnection flow instead of classical curvature flow.
