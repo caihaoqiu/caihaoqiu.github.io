@@ -30,13 +30,13 @@ var addressPoints = [
     -71.0578303
   ],
   [
-    "Revisiting Grain Growth: the Impact of Internal Stress on Grain Boundary Migration<br />9th International Conference on Recrystallization and Grain Growth (Rex&GG); McMaster University, Hamilton, Ontario, Canada",
-    43.2639397,
-    -79.9178252
-  ],
-  [
     "Modelling the Effects of Internal Stress on Microstructure Evolution at the Meso-scale<br />11th International Conference on Multiscale Materials Modeling (MMM11); Prague, Czech Republic",
     50.0874654,
     14.4212535
+  ],
+  [
+    "Revisiting Grain Growth: the Impact of Internal Stress on Grain Boundary Migration<br />9th International Conference on Recrystallization and Grain Growth (Rex&GG); McMaster University, Hamilton, Ontario, Canada",
+    43.2639397,
+    -79.9178252
   ]
 ];
