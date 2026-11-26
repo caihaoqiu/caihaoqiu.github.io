@@ -63,15 +63,18 @@ I am currently a Postdoctoral Fellow in the Department of Mechanical Engineering
 Prior to joining HKU, I received my Ph.D. degree in Materials Science and Engineering from City University of Hong Kong (CityUHK) in 2025, under the supervision of [Prof. Jian Han](https://scholars.cityu.edu.hk/en/persons/jianhan/) and [Prof. David J. Srolovitz](https://mse.hku.hk/people/dsrolovitz/).
 My B.S. degree in Materials Science and Engineering was awarded by Shanghai Jiao Tong University (SJTU) in 2021. 
 
-My research focuses on **materials theory and computational materials science** combined with **physics-informed artificial intelligence** on advanced structural/functional materials, with emphasis on understanding and predicting **defect dynamics** and **microstructure evolution** of crystalline materials. My research approach is multiscale, including atomistic simulations (molecular statics/dynamics) and meso- to continuum-scale modelings (i.e., Monte Calo, front tracking, phase-field crystal and phase field). A central focus of my research is bridging continuum-scale microstructure evolution with atomistic defect dynamics.
+My research focuses on **materials theory and computational materials science** combined with **physics-informed artificial intelligence** on advanced structural/functional materials, with emphasis on understanding and predicting **microstructure evolution** of crystalline materials based on **defect dynamics**. 
+My research approach is multiscale, including atomistic simulations (molecular statics/dynamics) and meso- to continuum-scale modelings (i.e., Monte Calo, front tracking, phase-field crystal and phase field). 
+A central focus of my research is bridging continuum-scale microstructure evolution with atomistic defect dynamics.
 
 
 ### Research Interests <span style="font-size: 0.72em; font-weight: normal; margin-left: 0.5em;">(<a href="/research/">More details &rarr;</a>)</span>
+* Microstructure evolution in crystalline materials
 * Thermodynamics and kinetics of interfaces
 * Interface-mediated plasticity
-* Microstructure evolution in crystalline materials
-* Materials behavior under far-from-equilibrium conditions
 * Heterostructured materials and nature-inspired structures
+* Materials behavior under far-from-equilibrium conditions
+
 * Physics-informed AI framework for microstructure design
 
 
