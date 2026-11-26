@@ -119,7 +119,7 @@ author_profile: true
       <div class="fig-caption">Fig. 4: Internal stress field evolution during grain growth and loss of correlation between GB velocity and curvature due to internal stress</div>
     </div>
     <div class="fig-slide">
-      <img src="/images/research/GG2.svg" alt="Fifth figure" />
+      <img src="/images/research/GG2.jpg" alt="Fifth figure" />
       <div class="fig-caption">Fig. 5: Statistics of grain growth considering shear coupling </div>
     </div>
   </div>
