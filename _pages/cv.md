@@ -10,23 +10,25 @@ redirect_from:
 {% include base_path %}
 
 <style>
+  .archive h1:not(.page__title),
   .archive h2 {
-    font-size: 1.15em !important;
-    border-bottom: 1px solid #d0d7de !important;
+    font-size: 1.1em !important;
+    border-bottom: 1px solid #888 !important;
     padding-bottom: 0.25em !important;
     margin-top: 1.4em !important;
     margin-bottom: 0.6em !important;
   }
   .archive p,
-  .archive li {
-    font-size: 0.85em !important;
+  .archive ul li,
+  .archive ol li {
+    font-size: 0.8em !important;
     line-height: 1.45 !important;
   }
   .archive ul {
-    margin-top: 0.3em !important;
-    margin-bottom: 0.8em !important;
+    margin-top: 0.25em !important;
+    margin-bottom: 0.75em !important;
   }
-  .archive li li {
+  .archive li ul li {
     font-size: 1em !important;
   }
 </style>
