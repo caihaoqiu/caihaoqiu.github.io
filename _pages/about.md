@@ -41,7 +41,7 @@ My B.S. degree in Materials Science and Engineering was awarded by Shanghai Jiao
 My research focuses on **materials theory and computational materials science** combined with **physics-informed artificial intelligence** on advanced structural/functional materials, with emphasis on understanding and predicting **defect dynamics** and **microstructure evolution** of crystalline materials. My research approach is multiscale, including atomistic simulations (molecular statics/dynamics) and meso- to continuum-scale modelings (i.e., Monte Calo, front tracking, phase-field crystal and phase field). A central focus of my research is bridging continuum-scale microstructure evolution with atomistic defect dynamics.
 
 
-### Research Interests
+### Research Interests <span style="font-size: 0.72em; font-weight: normal; margin-left: 0.5em;">(<a href="/research/">More details &rarr;</a>)</span>
 * **Thermodynamics and Kinetics of Interfaces and Interface-Mediated Plasticity:**
 Developing theoretical, bicrystallography-respecting, disconnection-mechanism-based continuum models to describe interface/grain boundary thermodynamics (e.g., interface/GB energy and equilibrium interface/GB structure); diffusive and non-diffusive interface/GB kinetics (e.g., interface/GB diffusion, faceting-defaceting, roughening, and migration); and interface-mediated plasticity (e.g., dislocation–interface interactions). 
 * **Microstructure Evolution in Polycrystals:**
@@ -65,12 +65,10 @@ Integrating physical laws and mechanistic models with deep learning to efficient
 
 
 
-### Selected News
+### Selected News <span style="font-size: 0.72em; font-weight: normal; margin-left: 0.5em;">(<a href="/news/">All news &rarr;</a>)</span>
 * **[Nov 2026]** Presented an invited talk on interface-mediated plasticity at *[MMM12 conference](https://www.mmm12.org/)* in Jeju, South Korea.
 * **[Jun 2026]** Our paper "[Shear-coupled grain growth statistics](https://doi.org/10.1016/j.actamat.2026.122494)" was published in *Acta
 Materialia*.
-* **[May 2026]** Presented an oral presentation on the effect of internal stress on grain growth at *[Rex&GG conference](https://rexgg2026.org/)* in McMaster University, Hamilton, ON, Canada.
-* **[Jun 2026]** Our collaboration paper "[Mechanisms of shape evolution and rotation during crystal growth in cylindrical grains](https://doi.org/10.1016/j.actamat.2025.121840)" was published in *Acta Materialia*.
 * **[Dec 2025]** Joined the Department of Mechanical Engineering at The University of Hong Kong as a Postdoctoral Fellow.
 * **[Oct 2025]** Received a Ph.D. in Materials Science and Engineering from the City University of Hong Kong, with the *Outstanding Research Thesis Award*.
 * **[Jun 2025]** Our paper "[Why grain growth is not curvature flow](https://doi.org/10.1073/pnas.2500707122)" was published in *Proceedings of the National Academy of Sciences*.
