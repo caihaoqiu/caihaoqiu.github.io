@@ -72,10 +72,10 @@ A central focus of my research is bridging continuum-scale microstructure evolut
 * Microstructure evolution in crystalline materials
 * Thermodynamics and kinetics of interfaces
 * Interface-mediated plasticity
-* Heterostructured materials and nature-inspired structures
 * Materials behavior under far-from-equilibrium conditions
-
 * Physics-informed AI framework for microstructure design
+* Heterostructured materials and nature-inspired structures
+
 
 
 ### Selected Publications <span style="font-size: 0.72em; font-weight: normal; margin-left: 0.5em;">(<a href="/publications/">Full list &rarr;</a>)</span>
