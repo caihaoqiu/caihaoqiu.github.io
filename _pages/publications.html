@@ -12,13 +12,13 @@ author_profile: true
     {% assign title_shown = false %}
     {% assign current_year = "" %}
     {% for post in site.publications reversed %}
-      {% if post.category != category %}
+      {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
       {% unless title_shown %}
         <div style="display: flex; align-items: baseline; justify-content: space-between; margin-top: 1.5em;">
-          <h2 style="margin: 0; border-bottom: none; padding-bottom: 0;">{{ category.title }}</h2>
-          {% if category == 'manuscripts' and site.author.googlescholar %}
+          <h2 style="margin: 0; border-bottom: none; padding-bottom: 0;">{{ category[1].title }}</h2>
+          {% if category[0] == 'manuscripts' and site.author.googlescholar %}
             <span style="font-size: 0.85em;">Full list on <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a></span>
           {% endif %}
         </div>
@@ -46,4 +46,3 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
