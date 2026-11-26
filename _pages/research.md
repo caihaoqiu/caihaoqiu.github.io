@@ -128,13 +128,16 @@ author_profile: true
   <div class="fig-dots"></div>
 </div>
 
+Grain growth in crystalline materials can be described by the motion of grain boundaries (or more generally, interfaces); hence, GB kinetics is theoretically important for understanding, predicting and controlling microstructure evolution. 
+GB motion through mean curvature flow is considered in classical approaches developed by John von Neumann and William W. Mullins in 1950s, for which only the reduction of total interface free energy is accounted for. 
+However, the classical mean curvature flow-description of grain growth fails to explain numerous experimentally observed phenomena. 
+For instance, internal stress is usually generated along with GB motion, and externally applied stress can drive GB motion. 
+As widely accepted in recent years, disconnections (line defects constrained on GBs possessing both step and/or dislocation character) mediate GB motion and provide a unified description of GB kinetics, reconciling capillarity and stress effects on GB motion.
 
-Despite decades of investigation, the classical mean curvature flow-description of grain growth fails to explain numerous experimentally observed phenomena. 
-We resolved the longstanding discrepancies between theory and experiment by developing theory and a mechanism-based continuum model for grain boundary (GB) migration. 
-GB migration in crystalline materials is mediated by disconnections, i.e., line defects constrained on GBs/interfaces possessing both step and/or dislocation character. 
-Disconnection-description offers a unified description of GB kinetics, reconciling the shear-coupled migration and conventional capillarity-driven migration
-We demonstrate that disconnection-mediated GB migration intrinsically generates internal stress field that, in turn, act on GB migration, which firmly demonstrates that realistic grain growth is disconnection flow instead of classical curvature flow. 
-This work revised curvature-driven grain growth with a defect-dynamics-based framework, providing a unified and multiscale understanding of microstructure evolution.
+We resolved the longstanding discrepancies between theory and experiment by **developing a disconnection-based and bicrystallography-respecting equation of motion for grain boundary (GB) migration** and implement it into continuum front-tracking and phase-field frameworks. 
+We demonstrate that disconnection flow along the GBs naturally governs GB faceting-defaceting transition, induces grain rotation and GB sliding, generates internal stress fields, stagnates grain growth, uncorrelates GB velocity and GB mean curvature, and leads to grain growth statistics consistent with experimental measurements.
+This work firmly demonstrated that realistic grain growth is disconnection flow instead of classical curvature flow.
+We modified the curvature-driven grain growth with a defect-dynamics-based framework, providing a unified and multiscale understanding of microstructure evolution.
 
 **References**
 1. **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” *Acta Materialia*, 317 (2026) 122494.
