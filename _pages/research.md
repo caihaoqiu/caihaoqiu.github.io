@@ -59,6 +59,13 @@ author_profile: true
 
 
 ### Thermodynamics and Kinetics of Interfaces and Interface-Mediated Plasticity
+<div style="text-align: center; margin: 1.0rem 0 1.5rem 0;">
+  <img src="/images/research/faceting.pdf" alt="Interface disconnection dynamics" style="max-width: 85%; height: auto; border: 1px solid #e5e7eb; border-radius: 4px;" />
+  <div style="font-size: 0.78rem; color: #666; margin-top: 0.35rem;">
+    Fig. 1: Atomic-scale disconnection motion and shear-coupled grain boundary migration.
+  </div>
+</div>
+
 Developing theoretical, bicrystallography-respecting, disconnection-mechanism-based continuum models to describe interface/grain boundary thermodynamics (e.g., interface/GB energy and equilibrium interface/GB structure); diffusive and non-diffusive interface/GB kinetics (e.g., interface/GB diffusion, faceting-defaceting, roughening, and migration); and interface-mediated plasticity (e.g., dislocation–interface interactions). 
 
 ### Microstructure Evolution in Polycrystals
