@@ -135,8 +135,7 @@ However, the classical mean curvature flow-description of grain growth fails to 
 As widely accepted in recent years, disconnections (line defects constrained on GBs possessing both step and/or dislocation character) mediate GB motion and provide a unified description of GB kinetics, reconciling capillarity and stress effects on GB motion.
 **We resolved the longstanding discrepancies between theory and experiment by developing a disconnection-based and bicrystallography-respecting equation of motion for grain boundary (GB) migration** and implement it into numerical methods including *continuum front-tracking* and *phase-field modeling*. 
 We demonstrate that disconnection flow along the GBs naturally governs GB faceting-defaceting transition, induces grain rotation and GB sliding, generates internal stress fields, stagnates grain growth, uncorrelates GB velocity and GB mean curvature, and leads to grain growth statistics consistent with experimental measurements.
-
-**We firmly demonstrated that realistic grain growth is disconnection flow instead of classical curvature flow**.
+**We demonstrated that realistic grain growth is disconnection flow instead of classical curvature flow**.
 We modified the curvature-driven grain growth with a defect-dynamics-based framework, providing a unified and multiscale understanding of microstructure evolution.
 
 
@@ -167,7 +166,11 @@ We modified the curvature-driven grain growth with a defect-dynamics-based frame
   <div class="fig-dots"></div>
 </div>
 
-Understanding the effect of interface on plastic deformation is important to understand, predict and design the mechanical behavior of materials. While it is well understood in homogeneous materials, the presence of interfaces in polycrystals and composites introduces strong constraints and heterogeneity for plastic deformation, fundamentally changing deformation pathways. My research demonstrates how interface properties control plastic deformation pathways and instability.  
+Plastic deformation near interfaces is central to the mechanical response and microstructure evolution of many material systems. 
+Such interfacemediated plasticity arises in heterogeneous materials, tribological contacts, and surface deformation processes. 
+In some contexts, it governs the ability of materials to sustain deformation without failure; in others, it is deliberately exploited to generate defect structures, recrystallization, and tailored microstructures with enhanced properties. 
+Understanding how interfaces control plastic flow is therefore a fundamental problem in materials science.
+
 
 
 Investigating the mechanisms governing microstructure evolution in polycrystals (i.e., grain growth and static/dynamic recrystallization), and developing theories, mechanism-based continuum models, and numerical methods to predict microstructure evolution in polycrystalline materials.
