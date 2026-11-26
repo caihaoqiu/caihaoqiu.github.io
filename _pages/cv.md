@@ -10,26 +10,27 @@ redirect_from:
 {% include base_path %}
 
 <style>
-  .compact-cv {
-    font-size: 0.85em;
-    line-height: 1.45;
+  .archive h2 {
+    font-size: 1.15em !important;
+    border-bottom: 1px solid #d0d7de !important;
+    padding-bottom: 0.25em !important;
+    margin-top: 1.4em !important;
+    margin-bottom: 0.6em !important;
   }
-  .compact-cv h2 {
-    font-size: 1.15em;
-    border-bottom: 1px solid #d0d7de;
-    padding-bottom: 0.25em;
-    margin-top: 1.4em;
-    margin-bottom: 0.6em;
+  .archive p,
+  .archive li {
+    font-size: 0.85em !important;
+    line-height: 1.45 !important;
   }
-  .compact-cv ul {
-    margin-top: 0.3em;
-    margin-bottom: 0.8em;
-    padding-left: 1.2em;
+  .archive ul {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.8em !important;
   }
-  .compact-cv li {
-    margin-bottom: 0.35em;
+  .archive li li {
+    font-size: 1em !important;
   }
 </style>
+
 
 <div class="compact-cv" markdown="1">
 
