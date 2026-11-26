@@ -14,14 +14,26 @@ Prior to joining HKU, I received my Ph.D. in Materials Science and Engineering f
 
 
 ### Research Interests
-* **Thermodynamics and Kinetics of Interfaces and Interface-Mediated Plasticity:** Developing theoretical, bicrystallography-respecting, disconnection-mechanism-based continuum models to describe interface/grain boundary thermodynamics (e.g., interface/GB energy and equilibrium interface/GB structure); diffusive and non-diffusive interface/GB kinetics (e.g., interface/GB diffusion, faceting-defaceting, roughening, and migration); and interface-mediated plasticity (e.g., dislocation–interface interactions). 
-* **Microstructure Evolution in Polycrystals:** Investigating the mechanisms governing microstructure evolution in polycrystals (i.e., grain growth and static/dynamic recrystallization), and developing theories, mechanism-based continuum models, and numerical methods to predict microstructure evolution in polycrystalline materials.
-* **Materials Behavior under Far-from-Equilibrium Conditions:** Investigating defect dynamics, microstructure evolution, and mechanical/functional properties under far-from-equilibrium conditions, including rapid quenching, severe plastic deformation, impact loading, oscillatory driving, and strong temperature gradients.
-* **Bio-inspired Architected and Heterostructured Materials:** Designing heterogeneous microstructures in polycrystalline and composite materials inspired by natural architectures (e.g., nacre, bamboo, leaves, and butterfly-wing scales) to overcome conventional property trade-offs and achieve multifunctionality.
-* **Physics-informed AI-assisted Materials Design:** Integrating physical laws and mechanistic models with deep learning to efficiently navigate large processing and microstructure parametric spaces, combining predictive accuracy with mechanistic interpretability and advancing toward autonomous materials design.
+* **Thermodynamics and Kinetics of Interfaces and Interface-Mediated Plasticity:**
+Developing theoretical, bicrystallography-respecting, disconnection-mechanism-based continuum models to describe interface/grain boundary thermodynamics (e.g., interface/GB energy and equilibrium interface/GB structure); diffusive and non-diffusive interface/GB kinetics (e.g., interface/GB diffusion, faceting-defaceting, roughening, and migration); and interface-mediated plasticity (e.g., dislocation–interface interactions). 
+* **Microstructure Evolution in Polycrystals:**
+Investigating the mechanisms governing microstructure evolution in polycrystals (i.e., grain growth and static/dynamic recrystallization), and developing theories, mechanism-based continuum models, and numerical methods to predict microstructure evolution in polycrystalline materials.
+* **Materials Behavior under Far-from-Equilibrium Conditions:**
+Investigating defect dynamics, microstructure evolution, and mechanical/functional properties under far-from-equilibrium conditions, including rapid quenching, severe plastic deformation, impact loading, oscillatory driving, and strong temperature gradients.
+* **Bio-inspired Architected and Heterostructured Materials:**
+Designing heterogeneous microstructures in polycrystalline and composite materials inspired by natural architectures (e.g., nacre, bamboo, leaves, and butterfly-wing scales) to overcome conventional property trade-offs and achieve multifunctionality.
+* **Physics-informed AI-assisted Materials Design:**
+Integrating physical laws and mechanistic models with deep learning to efficiently navigate large processing and microstructure parametric spaces, combining predictive accuracy with mechanistic interpretability and advancing toward autonomous materials design.
 
 
 ### Selected News
-* **[Nov 2026]** Presented an invited talk on interface-mediated plasticity at *MMM12 conference* in Jeju, South Korea.
-* **[Jun 2026]** Our paper on *[Shear-coupled grain growth statistics](https://doi.org/10.1016/j.actamat.2026.122494)* was published in *Acta Materialia*.
+* **[Nov 2026]** Presented an invited talk on interface-mediated plasticity at *[MMM12 conference](https://www.mmm12.org/)* in Jeju, South Korea.
+* **[Jun 2026]** Our paper "[Shear-coupled grain growth statistics](https://doi.org/10.1016/j.actamat.2026.122494)" was published in *Acta
+Materialia*.
+* **[May 2026]** Presented an oral presentation on the effect of internal stress on grain growth at *[Rex&GG conference](https://rexgg2026.org/)* in McMaster University, Hamilton, ON, Canada.
+* **[Jun 2026]** Our collaboration paper "[Mechanisms of shape evolution and rotation during crystal growth in cylindrical grains](https://doi.org/10.1016/j.actamat.2025.121840)" was published in *Acta Materialia*.
 * **[Dec 2025]** Joined the Department of Mechanical Engineering at The University of Hong Kong as a Postdoctoral Fellow.
+* **[Oct 2025]** Received a Ph.D. in Materials Science and Engineering from the City University of Hong Kong, with the *Outstanding Research Thesis Award*.
+* **[Jun 2025]** Our paper "[Why grain growth is not curvature flow](https://doi.org/10.1073/pnas.2500707122)" was published in *Proceedings of the National Academy of Sciences*.
+* **[Oct 2024]** Our collaboration paper "[Grain rotation mechanisms in nanocrystalline materials: Multiscale observations in Pt thin films](https://doi.org/10.1126/science.adk6384)" was published in *Science*.
+* **[Aug 2024]** Our paper "[Grain boundaries are Brownian ratchets](https://doi.org/10.1126/science.adp1516)" was published in *Science*.
