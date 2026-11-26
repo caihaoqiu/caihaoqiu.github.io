@@ -139,11 +139,13 @@ author_profile: true
     <div class="fig-slide">
       <img src="/images/research/rotation.svg" alt="Third figure" />
       <div class="fig-caption">Fig. 3: Grain rotation during grain growth mediated by disconnection</div>
+    </div> <!-- <-- THIS CLOSING TAG WAS MISSING -->
   </div>
   <button class="fig-btn fig-prev" aria-label="Previous">&#10094;</button>
   <button class="fig-btn fig-next" aria-label="Next">&#10095;</button>
   <div class="fig-dots"></div>
 </div>
+
 
 Developing theoretical, bicrystallography-respecting, disconnection-mechanism-based continuum models to describe interface/grain boundary thermodynamics (e.g., interface/GB energy and equilibrium interface/GB structure); diffusive and non-diffusive interface/GB kinetics (e.g., interface/GB diffusion, faceting-defaceting, roughening, and migration); and interface-mediated plasticity (e.g., dislocation–interface interactions). 
 
