@@ -27,22 +27,24 @@ author_profile: true
 </style>
 
 ## 2026
-* **[Nov 2026]** Presented an invited talk on interface-mediated plasticity at *[MMM12 conference](https://www.mmm12.org/)* in Jeju, South Korea.
-* **[Jun 2026]** Our paper "[Shear-coupled grain growth statistics](https://doi.org/10.1016/j.actamat.2026.122494)" was published in *Acta
+* **[08 Dec]** Joined the Department of Materials and Energy at The University of Hong Kong as a Postdoctoral Fellow.
+* **[10 Nov]** Presented an invited talk on interface-mediated plasticity at *[MMM12 conference](https://www.mmm12.org/)* in Jeju, South Korea.
+* **[7 Jul]** Our paper "[Shear-coupled grain growth statistics](https://doi.org/10.1016/j.actamat.2026.122494)" was published in *Acta
 Materialia*.
-* **[May 2026]** Presented an oral presentation on the effect of internal stress on grain growth at *[Rex&GG conference](https://rexgg2026.org/)* in McMaster University, Hamilton, ON, Canada.
-* **[Jun 2026]** Our collaboration paper "[Mechanisms of shape evolution and rotation during crystal growth in cylindrical grains](https://doi.org/10.1016/j.actamat.2025.121840)" was published in *Acta Materialia*.
+* **[26 May]** Presented an oral presentation on the effect of internal stress on grain growth at *[Rex&GG conference](https://rexgg2026.org/)* in McMaster University, Hamilton, ON, Canada.
+* **[01 Jan]** Our collaboration paper "[Mechanisms of shape evolution and rotation during crystal growth in cylindrical grains](https://doi.org/10.1016/j.actamat.2025.121840)" was published in *Acta Materialia*.
 
 
 ## 2025
-* **[Dec 2025]** Joined the Department of Mechanical Engineering at The University of Hong Kong as a Postdoctoral Fellow.
-* **[Oct 2025]** Received a Ph.D. in Materials Science and Engineering from the City University of Hong Kong, with the *Outstanding Research Thesis Award*.
-* **[Jun 2025]** Our paper "[Why grain growth is not curvature flow](https://doi.org/10.1073/pnas.2500707122)" was published in *Proceedings of the National Academy of Sciences*.
+* **[08 Dec]** Joined the Department of Mechanical Engineering at The University of Hong Kong as a Postdoctoral Fellow.
+* **[02 Oct]** Received *Outstanding PhD/Research Thesis Award* by City University of Hong Kong.
+* **[02 Oct]** Received a Ph.D. in Materials Science and Engineering from the City University of Hong Kong.
+* **[12 Jun]** Our paper "[Why grain growth is not curvature flow](https://doi.org/10.1073/pnas.2500707122)" was published in *Proceedings of the National Academy of Sciences*.
 
 
 ## 2024
-* **[Oct 2024]** Our collaboration paper "[Grain rotation mechanisms in nanocrystalline materials: Multiscale observations in Pt thin films](https://doi.org/10.1126/science.adk6384)" was published in *Science*.
-* **[Aug 2024]** Our paper "[Grain boundaries are Brownian ratchets](https://doi.org/10.1126/science.adp1516)" was published in *Science*.
+* **[3 Oct]** Our collaboration paper "[Grain rotation mechanisms in nanocrystalline materials: Multiscale observations in Pt thin films](https://doi.org/10.1126/science.adk6384)" was published in *Science*.
+* **[29 Aug]** Our paper "[Grain boundaries are Brownian ratchets](https://doi.org/10.1126/science.adp1516)" was published in *Science*.
 
 
 
