@@ -12,7 +12,7 @@ redirect_from:
 <style>
   .archive h1:not(.page__title),
   .archive h2 {
-    font-size: 1.1em !important;
+    font-size: 1.18em !important;
     border-bottom: 1px solid #888 !important;
     padding-bottom: 0.25em !important;
     margin-top: 1.4em !important;
@@ -21,8 +21,8 @@ redirect_from:
   .archive p,
   .archive ul li,
   .archive ol li {
-    font-size: 0.8em !important;
-    line-height: 1.45 !important;
+    font-size: 0.88em !important;
+    line-height: 1.5 !important;
   }
   .archive ul {
     margin-top: 0.25em !important;
@@ -32,6 +32,7 @@ redirect_from:
     font-size: 1em !important;
   }
 </style>
+
 
 
 <div class="compact-cv" markdown="1">
