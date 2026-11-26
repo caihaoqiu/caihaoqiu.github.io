@@ -104,7 +104,7 @@ author_profile: true
   <div class="fig-track">
     <div class="fig-slide">
       <img src="/images/research/disconnection_geometry.svg" alt="Interface faceting-defaceting" />
-      <div class="fig-caption">Fig. 1: The disconnection description of an arbitrarily curved GB (green curve) where the black lattice (representing one grain) and the white lattice (representing the other grain) meet together.</div>
+      <div class="fig-caption">Fig. 1: The disconnection description of an arbitrarily curved GB (green curve) where the black lattice (representing one grain) and the white lattice (representing the other grain) meet together. </div>
     </div>
     <div class="fig-slide">
       <img src="/images/research/faceting.jpg" alt="Second figure" />
@@ -112,15 +112,15 @@ author_profile: true
     </div>
     <div class="fig-slide">
       <img src="/images/research/rotation.svg" alt="Third figure" />
-      <div class="fig-caption">Fig. 3: Grain rotation during grain growth mediated by disconnection</div>
+      <div class="fig-caption">Fig. 3: Grain rotation during grain growth induced by disconnection flow along GB</div>
     </div>
         <div class="fig-slide">
       <img src="/images/research/GG1.svg" alt="Fourth figure" />
-      <div class="fig-caption">Fig. 4: Internal stress field evolution during grain growth and loss of correlation between GB velocity and curvature due to internal stress</div>
+      <div class="fig-caption">Fig. 4: Internal stress field evolution during grain growth and loss of correlation between GB velocity and curvature (consistent with experimental measurements). </div>
     </div>
     <div class="fig-slide">
       <img src="/images/research/GG2.jpg" alt="Fifth figure" />
-      <div class="fig-caption">Fig. 5: Statistics of grain growth considering shear coupling </div>
+      <div class="fig-caption">Fig. 5: Grain growth statistics in classical mean curvature flow (MCF) framework and in our disconnection-based framework naturally conciling MCF and GB shear coupling. </div>
     </div>
   </div>
   <button type="button" class="fig-btn fig-prev" onclick="moveFigSlide(this, -1)" aria-label="Previous">&#10094;</button>
@@ -135,8 +135,10 @@ However, the classical mean curvature flow-description of grain growth fails to 
 As widely accepted in recent years, disconnections (line defects constrained on GBs possessing both step and/or dislocation character) mediate GB motion and provide a unified description of GB kinetics, reconciling capillarity and stress effects on GB motion.
 **We resolved the longstanding discrepancies between theory and experiment by developing a disconnection-based and bicrystallography-respecting equation of motion for grain boundary (GB) migration** and implement it into numerical methods including *continuum front-tracking* and *phase-field modeling*. 
 We demonstrate that disconnection flow along the GBs naturally governs GB faceting-defaceting transition, induces grain rotation and GB sliding, generates internal stress fields, stagnates grain growth, uncorrelates GB velocity and GB mean curvature, and leads to grain growth statistics consistent with experimental measurements.
-This work firmly demonstrated that realistic grain growth is disconnection flow instead of classical curvature flow.
+
+**We firmly demonstrated that realistic grain growth is disconnection flow instead of classical curvature flow**.
 We modified the curvature-driven grain growth with a defect-dynamics-based framework, providing a unified and multiscale understanding of microstructure evolution.
+
 
 **References**
 1. **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” *Acta Materialia*, 317 (2026) 122494.
