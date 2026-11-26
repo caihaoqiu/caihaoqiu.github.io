@@ -7,10 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a Postdoctoral Fellow in the Department of Mechanical Engineering at The University of Hong Kong (HKU), working with [Prof. David J. Srolovitz](https://mse.hku.hk/people/dsrolovitz/). My research focuses on **materials theory and computational materials science** combined with **physics-informed artificial intelligence** on advanced structural/functional materials, with emphasis on understanding and predicting defect dynamics and microstructure evolution of crystalline materials. My research approach is multiscale, including atomistic simulations (molecular statics/dynamics) and meso- to continuum-scale modelings (i.e., Monte Calo, front tracking, phase-field crystal and phase field). A central focus of my research is bridging continuum-scale microstructure evolution with atomistic defect dynamics.
+I am currently a Postdoctoral Fellow in the Department of Mechanical Engineering at The University of Hong Kong (HKU), working with [Prof. David J. Srolovitz](https://mse.hku.hk/people/dsrolovitz/). 
+Prior to joining HKU, I received my B.S. degree in Materials Science and Engineering from Shanghai Jiao Tong University in 2021. My Ph.D. degree was awarded by the Department of Materials Science and Engineering of City University of Hong Kong in 2025, under the supervision of [Prof. Jian Han](https://scholars.cityu.edu.hk/en/persons/jianhan/) and [Prof. David J. Srolovitz](https://mse.hku.hk/people/dsrolovitz/).
 
-
-Prior to joining HKU, I received my Ph.D. in Materials Science and Engineering from City University of Hong Kong in 2025, under the supervision of [Prof. Jian Han](https://scholars.cityu.edu.hk/en/persons/jianhan/) and [Prof. David J. Srolovitz](https://mse.hku.hk/people/dsrolovitz/). 
+My research focuses on **materials theory and computational materials science** combined with **physics-informed artificial intelligence** on advanced structural/functional materials, with emphasis on understanding and predicting **defect dynamics** and **microstructure evolution** of crystalline materials. My research approach is multiscale, including atomistic simulations (molecular statics/dynamics) and meso- to continuum-scale modelings (i.e., Monte Calo, front tracking, phase-field crystal and phase field). A central focus of my research is bridging continuum-scale microstructure evolution with atomistic defect dynamics.
 
 
 ### Research Interests
@@ -24,6 +24,17 @@ Investigating defect dynamics, microstructure evolution, and mechanical/function
 Designing heterogeneous microstructures in polycrystalline and composite materials inspired by natural architectures (e.g., nacre, bamboo, leaves, and butterfly-wing scales) to overcome conventional property trade-offs and achieve multifunctionality.
 * **Physics-informed AI-assisted Materials Design:**
 Integrating physical laws and mechanistic models with deep learning to efficiently navigate large processing and microstructure parametric spaces, combining predictive accuracy with mechanistic interpretability and advancing toward autonomous materials design.
+
+
+### [Selected Publications](https://scholar.google.com/citations?user=B7N1cSMAAAAJ&hl=en)
+* **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” Acta Materialia, 317 (2026) 122494.
+* **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Why grain growth is not curvature flow.” Proceedings of the National Academy of Sciences, 122 (2025) e2500707122.
+* **C. Qiu**, M. Punke, Y. Tian, Y. Han, S. Wang, Y. Su, M. Salvalaglio, X. Pan, D. J. Srolovitz, and J. Han. “Grain boundaries are Brownian ratchets.” Science, 385 (2024) 980–985, .
+* Y. Tian, X. Gong, M. Xu, **C. Qiu**, Y. Han, Y. Bi, L. V. Estrada, E. Boltynjuk, H. Hahn, J. Han, D. J. Srolovitz, and X. Pan. “Grain rotation mechanisms in nanocrystalline materials: Multiscale observations in Pt thin films.” Science, 386 (2024) 49–54.
+* **C. Qiu**, M. Salvalaglio, D. J. Srolovitz, and J. Han. “Disconnection flow–mediated grain rotation.” Proceedings of the National Academy of Sciences, 121 (2024) e2310302121.
+* **C. Qiu**, M. Salvalaglio, D. J. Srolovitz, and J. Han. “Interface faceting–defaceting mediated by disconnections.” Acta Materialia, 251 (2023) 118880.
+* **C. Qiu**, Y. Su, J. Yang, X. Wang, B. Chen, Q. Ouyang, and D. Zhang. “Microstructural characteristics and mechanical behavior of SiC(CNT)/Al multiphase interfacial micro-zones via molecular dynamics simulations.” Composites Part B: Engineering, 220 (2021) 108996.
+
 
 
 ### Selected News
