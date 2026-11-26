@@ -8,28 +8,42 @@ redirect_from:
 ---
 
 <style>
-  .page__content h1 {
-    font-size: 1.4em !important;
-    margin-bottom: 0.5em !important;
+  /* Identical Page Titles */
+  #main .page__title,
+  #main .page__content h1 {
+    font-size: 1.45rem !important;
+    margin-bottom: 0.5rem !important;
   }
-  .page__content h2,
-  .page__content h3 {
-    font-size: 1.18em !important;
-    margin-top: 1.3em !important;
-    margin-bottom: 0.5em !important;
+
+  /* Identical Section Headings + CV Divider Line */
+  #main .page__content h2,
+  #main .page__content h3,
+  #main .archive h1:not(.page__title),
+  #main .archive h2,
+  #main .archive h3 {
+    font-size: 1.15rem !important;
+    border-bottom: 1px solid #888 !important;
+    padding-bottom: 0.25rem !important;
+    margin-top: 1.4rem !important;
+    margin-bottom: 0.6rem !important;
   }
-  .page__content p,
-  .page__content ul li,
-  .page__content ol li {
-    font-size: 0.88em !important;
+
+  /* Identical Body & Bullet Font Size (Locked in rem) */
+  #main .page__content p,
+  #main .page__content li,
+  #main .archive p,
+  #main .archive li {
+    font-size: 0.88rem !important;
     line-height: 1.5 !important;
   }
-  .page__content ul {
-    margin-top: 0.25em !important;
-    margin-bottom: 0.75em !important;
-  }
-  .page__content li ul li {
-    font-size: 1em !important;
+
+  /* Identical List Spacing */
+  #main .page__content ul,
+  #main .page__content ol,
+  #main .archive ul,
+  #main .archive ol {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.75rem !important;
   }
 </style>
 
