@@ -98,7 +98,7 @@ author_profile: true
   }
 </style>
 
-### Thermodynamics and Kinetics of Interfaces and Interface-Mediated Plasticity
+### Grain Boundary Kinetics and Grain Growth 
 
 <div class="fig-carousel">
   <div class="fig-track">
@@ -120,9 +120,29 @@ author_profile: true
   <div class="fig-dots"></div>
 </div>
 
-Developing theoretical, bicrystallography-respecting, disconnection-mechanism-based continuum models to describe interface/grain boundary thermodynamics (e.g., interface/GB energy and equilibrium interface/GB structure); diffusive and non-diffusive interface/GB kinetics (e.g., interface/GB diffusion, faceting-defaceting, roughening, and migration); and interface-mediated plasticity (e.g., dislocation–interface interactions). 
 
-### Microstructure Evolution in Polycrystals
+Despite decades of investigation, the classical mean curvature flow-description of grain growth fails to explain numerous experimentally observed phenomena. 
+We resolved the longstanding discrepancies between theory and experiment by developing theory and a mechanism-based continuum model for grain boundary (GB) migration. 
+GB migration in crystalline materials is mediated by disconnections, i.e., line defects constrained on GBs/interfaces possessing both step and/or dislocation character. 
+Disconnection-description offers a unified description of GB kinetics, reconciling the shear-coupled migration and conventional capillarity-driven migration
+We demonstrate that disconnection-mediated GB migration intrinsically generates internal stress field that, in turn, act on GB migration, which firmly demonstrates that realistic grain growth is disconnection flow instead of classical curvature flow. 
+This work revised curvature-driven grain growth with a defect-dynamics-based framework, providing a unified and multiscale understanding of microstructure evolution.
+
+**Reference**
+
+[1] **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Shear-coupled grain growth statistics.” *Acta Materialia*, 317 (2026) 122494.
+
+[2] **C. Qiu**, D. J. Srolovitz, G. S. Rohrer, J. Han, and M. Salvalaglio. “Why grain growth is not curvature flow.” *Proceedings of the National Academy of Sciences*, 122 (2025) e2500707122.
+
+[3] **C. Qiu**, M. Salvalaglio, D. J. Srolovitz, and J. Han. “Disconnection flow–mediated grain rotation.” *Proceedings of the National Academy of Sciences*, 121 (2024) e2310302121.
+
+[4] Y. Tian, X. Gong, M. Xu, **C. Qiu**, Y. Han, Y. Bi, L. V. Estrada, E. Boltynjuk, H. Hahn, J. Han, D. J. Srolovitz, and X. Pan. “Grain rotation mechanisms in nanocrystalline materials: Multiscale observations in Pt thin films.” *Science*, 386 (2024) 49–54.
+
+[5] **C. Qiu**, M. Salvalaglio, D. J. Srolovitz, and J. Han. “Interface faceting–defaceting mediated by disconnections.” *Acta Materialia*, 251 (2023) 118880.
+
+
+### Interface-Mediated Plasticity and Recrystallization Mechanism
+
 
 <div class="fig-carousel">
   <div class="fig-track">
@@ -140,7 +160,14 @@ Developing theoretical, bicrystallography-respecting, disconnection-mechanism-ba
   <div class="fig-dots"></div>
 </div>
 
+Understanding the effect of interface on plastic deformation is important to understand, predict and design the mechanical behavior of materials. While it is well understood in homogeneous materials, the presence of interfaces in polycrystals and composites introduces strong constraints and heterogeneity for plastic deformation, fundamentally changing deformation pathways. My research demonstrates how interface properties control plastic deformation pathways and instability.  
+
+
 Investigating the mechanisms governing microstructure evolution in polycrystals (i.e., grain growth and static/dynamic recrystallization), and developing theories, mechanism-based continuum models, and numerical methods to predict microstructure evolution in polycrystalline materials.
+
+
+
+
 
 ### Materials Behavior under Far-from-Equilibrium Conditions
 
