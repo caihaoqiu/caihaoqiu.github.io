@@ -12,8 +12,8 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="{{ include.type | default: "list" }}__item" style="margin-bottom: 1.1em; padding-bottom: 0.6em; border-bottom: 1px solid #f0f0f0;">
+  <article class="archive__item" itemscope itemtype="http://schema.org">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -26,38 +26,61 @@
       </div>
     {% endif %}
 
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h2>
-    
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% if post.collection == 'publications' %}
+      <!-- Compact Title (Smaller Font, Tighter Line Height) -->
+      <div class="archive__item-title" itemprop="headline" style="font-size: 0.98em; font-weight: 600; line-height: 1.35; margin: 0 0 0.2em 0;">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" target="_blank" style="text-decoration: none;">{{ title }}</a>
+        {% elsif post.link %}
+          <a href="{{ post.link }}">{{ title }}</a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
         {% endif %}
+      </div>
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
-    <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}<p><strong><a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></strong></p></div>
+      <!-- Clear Author List -->
+      {% if post.authors %}
+        <div style="font-size: 0.85em; color: #333; line-height: 1.35; margin: 0 0 0.15em 0;">
+          {{ post.authors }}
+        </div>
+      {% endif %}
+
+      <!-- Venue, Year & Direct DOI/Paper Link on One Compact Line -->
+      <div style="font-size: 0.83em; color: #666; line-height: 1.35; margin: 0;">
+        {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
+        {% if post.paperurl %} &nbsp;|&nbsp; <a href="{{ post.paperurl }}" target="_blank">[Paper / DOI]</a>{% endif %}
+        {% if post.slidesurl %} &nbsp;|&nbsp; <a href="{{ post.slidesurl }}" target="_blank">[Slides]</a>{% endif %}
+        {% if post.bibtexurl %} &nbsp;|&nbsp; <a href="{{ post.bibtexurl }}" target="_blank">[BibTeX]</a>{% endif %}
+      </div>
+
+    {% else %}
+      <!-- Standard Layout for Talks, Teaching, and Posts -->
+      <h2 class="archive__item-title" itemprop="headline">
+        {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+      </h2>
+
+      {% if post.read_time %}
+        <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+      {% endif %}
+
+      {% if post.collection == 'teaching' %}
+        <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+      {% elsif post.collection == 'talks' %}
+        <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>
+        <p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}}</p>
+      {% elsif post.date %}
+        <p class="page__meta"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+      {% endif %}
+
+      {% if post.excerpt and site.read_more != 'enabled' %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% elsif post.excerpt and site.read_more == 'enabled' %}
+        <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> {{ site.data.ui-text[site.locale].read_more | default: "Read more" }}</a></strong></p></p>
+      {% endif %}
     {% endif %}
-    
-    {% include /components/citations.html
-        citation=post.citation
-        paperurl=post.paperurl
-        slidesurl=post.slidesurl
-        bibtexurl=post.bibtexurl
-    %}    
-
   </article>
 </div>
