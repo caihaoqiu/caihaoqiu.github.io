@@ -9,6 +9,30 @@ redirect_from:
 
 {% include base_path %}
 
+<style>
+  .compact-cv {
+    font-size: 0.85em;
+    line-height: 1.45;
+  }
+  .compact-cv h2 {
+    font-size: 1.15em;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 0.25em;
+    margin-top: 1.4em;
+    margin-bottom: 0.6em;
+  }
+  .compact-cv ul {
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
+    padding-left: 1.2em;
+  }
+  .compact-cv li {
+    margin-bottom: 0.35em;
+  }
+</style>
+
+<div class="compact-cv" markdown="1">
+
 Academic Appointments
 ======
 * 02/2027-: Postdoctoral fellow, Department of Materials, ETH Zurich
