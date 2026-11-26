@@ -8,44 +8,55 @@ redirect_from:
 ---
 
 <style>
-  /* Identical Page Titles */
-  #main .page__title,
-  #main .page__content h1 {
-    font-size: 1.45rem !important;
-    margin-bottom: 0.5rem !important;
+  /* Main Page Title (About Me font size + spacing) */
+  .page__content h1,
+  .archive .page__title {
+    font-size: 1.4em !important;
+    margin-bottom: 0.5em !important;
   }
 
-  /* Identical Section Headings + CV Divider Line */
-  #main .page__content h2,
-  #main .page__content h3,
-  #main .archive h1:not(.page__title),
-  #main .archive h2,
-  #main .archive h3 {
-    font-size: 1.15rem !important;
+  /* Section Headings (About Me 1.18em font size + CV spacing & underline) */
+  .page__content h2,
+  .page__content h3,
+  .archive h1:not(.page__title),
+  .archive h2,
+  .archive h3 {
+    font-size: 1.18em !important;
     border-bottom: 1px solid #888 !important;
-    padding-bottom: 0.25rem !important;
-    margin-top: 1.4rem !important;
-    margin-bottom: 0.6rem !important;
+    padding-bottom: 0.25em !important;
+    margin-top: 1.4em !important;
+    margin-bottom: 0.6em !important;
   }
 
-  /* Identical Body & Bullet Font Size (Locked in rem) */
-  #main .page__content p,
-  #main .page__content li,
-  #main .archive p,
-  #main .archive li {
-    font-size: 0.88rem !important;
+  /* Body Text & List Items (About Me 0.88em font size + CV 1.5 line spacing) */
+  .page__content p,
+  .page__content ul li,
+  .page__content ol li,
+  .archive p,
+  .archive ul li,
+  .archive ol li {
+    font-size: 0.88em !important;
     line-height: 1.5 !important;
   }
 
-  /* Identical List Spacing */
-  #main .page__content ul,
-  #main .page__content ol,
-  #main .archive ul,
-  #main .archive ol {
-    margin-top: 0.25rem !important;
-    margin-bottom: 0.75rem !important;
+  /* List Block Spacing (CV spacing) */
+  .page__content ul,
+  .page__content ol,
+  .archive ul,
+  .archive ol {
+    margin-top: 0.25em !important;
+    margin-bottom: 0.75em !important;
+  }
+
+  /* Prevent Nested Sub-Bullets from Shrinking Twice */
+  .page__content li ul li,
+  .page__content li ol li,
+  .archive li ul li,
+  .archive li ol li {
+    font-size: 1em !important;
   }
 </style>
+
 
 
 I am currently a Postdoctoral Fellow in the Department of Mechanical Engineering at The University of Hong Kong (HKU), working with [Prof. David J. Srolovitz](https://mse.hku.hk/people/dsrolovitz/). 
