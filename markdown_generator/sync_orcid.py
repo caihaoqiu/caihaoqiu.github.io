@@ -4,7 +4,7 @@ import glob
 import requests
 
 ORCID_ID = "0000-0001-9927-3938"
-ORCID_API = f"https://orcid.org{ORCID_ID}/works"
+ORCID_API = "https://" + "pub.orcid.org/v3.0/" + ORCID_ID + "/works"
 HEADERS = {"Accept": "application/json"}
 
 def get_crossref_authors(doi):
@@ -12,7 +12,8 @@ def get_crossref_authors(doi):
     if not doi:
         return ""
     try:
-        r = requests.get(f"https://crossref.org{doi}", timeout=10)
+        api_url = "https://" + "api.crossref.org/works/" + doi
+        r = requests.get(api_url, timeout=10)
         if r.status_code == 200:
             authors = r.json().get("message", {}).get("author", [])
             names = []
@@ -34,7 +35,6 @@ def main():
     groups = resp.json().get("group", [])
 
     os.makedirs("_publications", exist_ok=True)
-    # Remove old auto-generated files so deleted/updated ORCID items stay in sync
     for old_file in glob.glob("_publications/*.md"):
         os.remove(old_file)
 
@@ -66,12 +66,12 @@ def main():
         for eid in ext_ids:
             if eid.get("external-id-type") == "doi":
                 doi = eid.get("external-id-value", "")
-                url = f"https://doi.org{doi}"
+                url = "https://" + "doi.org/" + doi
                 break
         if not url and work.get("url"):
             url = work["url"].get("value", "")
 
-        # Category (preprints vs journal manuscripts)
+        # Category
         work_type = work.get("type", "")
         category = "conferences" if "conference" in work_type else "manuscripts"
 
