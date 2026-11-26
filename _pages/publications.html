@@ -5,22 +5,22 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #f2f3f3; padding-bottom: 0.3em; margin-bottom: 0.8em;">
+          <h2 style="margin: 0; border-bottom: none; padding-bottom: 0;">{{ category[1].title }}</h2>
+          {% if category[0] == 'manuscripts' and site.author.googlescholar %}
+            <span style="font-size: 0.85em;">Full list on <a href="{{ site.author.googlescholar }}" target="_blank">Google Scholar</a></span>
+          {% endif %}
+        </div>
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}
@@ -31,6 +31,3 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
-
