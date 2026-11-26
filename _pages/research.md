@@ -60,7 +60,7 @@ author_profile: true
 
 ### Thermodynamics and Kinetics of Interfaces and Interface-Mediated Plasticity
 <div style="text-align: center; margin: 1.0rem 0 1.5rem 0;">
-  <img src="/images/research/faceting.pdf" alt="Interface faceting-defaceting" style="max-width: 85%; height: auto; border: 1px solid #e5e7eb; border-radius: 4px;" />
+  <img src="/images/research/faceting.jpg" alt="Interface faceting-defaceting" style="max-width: 85%; height: auto; border: 1px solid #e5e7eb; border-radius: 4px;" />
   <div style="font-size: 0.78rem; color: #666; margin-top: 0.35rem;">
     Fig. 1: Interface faceting-defaceting mediated by disconnections
   </div>
