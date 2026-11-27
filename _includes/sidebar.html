@@ -1,25 +1,60 @@
 {% include base_path %}
 
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
+{% if page.url == "/" or page.url == "/about/" %}
+  {% if page.author_profile or layout.author_profile %}
+    <div class="sidebar sticky">
+      {% include author-profile.html %}
+    </div>
   {% endif %}
+{% else %}
+  <div class="sidebar sticky" id="auto-toc-sidebar">
+    <nav class="toc" style="background: #fafafa; border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.85rem 1rem;">
+      <header>
+        <h4 class="nav__title" style="margin: 0 0 0.5rem 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: #333; border-bottom: 1px solid #ddd; padding-bottom: 0.35rem;">
+          Contents
+        </h4>
+      </header>
+      <ul id="auto-toc-list" style="list-style: none; margin: 0; padding: 0; font-size: 0.8rem; line-height: 1.45;"></ul>
+    </nav>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var tocList = document.getElementById('auto-toc-list');
+      var sidebar = document.getElementById('auto-toc-sidebar');
+      if (!tocList || !sidebar) return;
+
+      // Collect visible section headings inside the main content area
+      var container = document.querySelector('.archive') || document.querySelector('.page__content');
+      if (!container) return;
+
+      var headings = Array.from(container.querySelectorAll('h1, h2, h3')).filter(function(h) {
+        return h.offsetParent !== null && !h.classList.contains('page__title') && h.textContent.trim().length > 0;
+      });
+
+      if (headings.length === 0) {
+        sidebar.style.display = 'none';
+        return;
+      }
+
+      headings.forEach(function(h, idx) {
+        if (!h.id) {
+          h.id = 'section-' + idx + '-' + h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        }
+        var li = document.createElement('li');
+        var isSub = (h.tagName === 'H3' && headings.some(function(x) { return x.tagName === 'H2' || x.tagName === 'H1'; }));
+        li.style.cssText = 'margin-bottom: 0.4rem; padding-left: ' + (isSub ? '0.85rem' : '0') + ';';
+
+        var a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent.replace(/\(Full list.*\)/i, '').trim();
+        a.style.cssText = 'color: #444; text-decoration: none; display: block; transition: color 0.2s;';
+        a.onmouseover = function() { a.style.color = '#000'; a.style.textDecoration = 'underline'; };
+        a.onmouseout = function() { a.style.color = '#444'; a.style.textDecoration = 'none'; };
+
+        li.appendChild(a);
+        tocList.appendChild(li);
+      });
+    });
+  </script>
 {% endif %}
