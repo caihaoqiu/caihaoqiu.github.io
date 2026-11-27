@@ -47,8 +47,8 @@ author_profile: true
     padding: 0 2.2rem;
   }
   .fig-slide img {
-    max-width: 85%;
-    height: 270px;
+    max-width: 90%;
+    height: 300px;
     object-fit: contain;
     border: 1px solid #e5e7eb;
     border-radius: 4px;
