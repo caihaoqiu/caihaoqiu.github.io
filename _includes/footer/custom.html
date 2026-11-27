@@ -1,6 +1,16 @@
-<!-- start custom footer snippets -->
+{% include base_path %}
 
-<!-- Support for MathJax -->
-<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+<style>
+  .page__footer,
+  footer,
+  #footer {
+    display: none !important;
+    height: 0 !important;
+    visibility: hidden !important;
+  }
 
-<!-- end custom footer snippets -->
+  body {
+    margin-bottom: 2em !important;
+    padding-bottom: 0 !important;
+  }
+</style>
