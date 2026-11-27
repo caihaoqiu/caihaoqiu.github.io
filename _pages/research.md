@@ -187,12 +187,8 @@ We explored
 <div class="fig-carousel">
   <div class="fig-track">
     <div class="fig-slide">
-      <img src="/images/research/noneq_1.jpg" alt="Far-from-equilibrium figure 1" />
-      <div class="fig-caption">Fig. 1: Description of first far-from-equilibrium figure</div>
-    </div>
-    <div class="fig-slide">
-      <img src="/images/research/noneq_2.jpg" alt="Far-from-equilibrium figure 2" />
-      <div class="fig-caption">Fig. 2: Description of second far-from-equilibrium figure</div>
+      <img src="/images/research/oscillation.svg" alt="Far-from-equilibrium figure 1" />
+      <div class="fig-caption">Fig. 1: Grain boundaries are Brownian ratchets that can perform directional motion under oscillatory driving and alter grain growth behavior.</div>
     </div>
   </div>
   <button type="button" class="fig-btn fig-prev" onclick="moveFigSlide(this, -1)" aria-label="Previous">&#10094;</button>
@@ -200,7 +196,17 @@ We explored
   <div class="fig-dots"></div>
 </div>
 
-Investigating defect dynamics, microstructure evolution, and mechanical/functional properties under far-from-equilibrium conditions, including rapid quenching, severe plastic deformation, impact loading, oscillatory driving, and strong temperature gradients.
+Most natural and engineering systems are far from thermodynamic equilibrium.
+Classical description of dynamic systems is assumed near equilibrium, typically described by free energy minimization towards thermodynamic equilibrium and Onsager linear force-flux relation. 
+On the contrary, far-from-equilibrium (FFE) systems are continuously driven and exchanging energy and mass with their environments towards a non-equilibrium steady state instead of thermodynamic equilibrium. 
+The nonlinear force-flux relation and history-dependent dissipation can lead to the emergence of self-organized phases with broken global symmetry/uniformity and high free energy. 
+Therefore, controllable FFE processing can be promisingly used to produce phases that are inaccessible by classical nearequilibrium dynamics.
+In materials science, FFE processing techniques (e.g., as additive manufacturing, rapid solidification, severe plastic deformation, and oscillatory external fields) enable the modulation and exploration of nonequilibrium microstructures that cannot be achieved under widely applied near-equilibrium materials processing. 
+
+A typical example is the application of various oscillatory fields (e.g., mechanical, thermal, ...), as observed in experiments, promotes abnormal grain growth (AGG) and generates heterogeneous microstructures or single crystals.
+**Our recent work demonstrates that GBs are natural Brownian ratchet and exhibit directional drifting motion under oscillatory driving.** 
+We demonstrate that most GBs behave as Brownian ratchets, exhibiting unidirectional motion under oscillatory driving or cyclic thermal annealing. 
+Our observations build on molecular dynamics and phase-field crystal simulations for a wide range of GB types and driving forces in both bicrystal and polycrystalline microstructures and we corroborate these simulation results through in situ experimental observations. 
 
 
 **References**
