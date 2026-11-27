@@ -7,14 +7,41 @@
     </div>
   {% endif %}
 {% else %}
+  <style>
+    #auto-toc-sidebar .nav__title,
+    #auto-toc-sidebar .toc,
+    #auto-toc-sidebar li,
+    #auto-toc-sidebar a {
+      text-transform: none !important;
+      letter-spacing: normal !important;
+    }
+    #auto-toc-sidebar .nav__title {
+      font-size: 1.02rem !important;
+      font-weight: 700 !important;
+      margin: 0 0 0.6rem 0 !important;
+      color: #222 !important;
+      border-bottom: 1px solid #ddd !important;
+      padding-bottom: 0.35rem !important;
+    }
+    #auto-toc-list a {
+      font-size: 0.9rem !important;
+      line-height: 1.45 !important;
+      color: #444 !important;
+      text-decoration: none !important;
+      display: block !important;
+    }
+    #auto-toc-list a:hover {
+      color: #000 !important;
+      text-decoration: underline !important;
+    }
+  </style>
+
   <div class="sidebar sticky" id="auto-toc-sidebar">
-    <nav class="toc" style="background: #fafafa; border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.85rem 1rem;">
+    <nav class="toc" style="background: #fafafa; border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.9rem 1.05rem;">
       <header>
-        <h4 class="nav__title" style="margin: 0 0 0.5rem 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: #333; border-bottom: 1px solid #ddd; padding-bottom: 0.35rem;">
-          Contents
-        </h4>
+        <h4 class="nav__title">Contents</h4>
       </header>
-      <ul id="auto-toc-list" style="list-style: none; margin: 0; padding: 0; font-size: 0.8rem; line-height: 1.45;"></ul>
+      <ul id="auto-toc-list" style="list-style: none; margin: 0; padding: 0;"></ul>
     </nav>
   </div>
 
@@ -45,14 +72,11 @@
           }
           var li = document.createElement('li');
           var isSub = (h.tagName === 'H3' && hasTop);
-          li.style.cssText = 'margin-bottom: 0.45rem; padding-left: ' + (isSub ? '0.85rem' : '0') + ';';
+          li.style.cssText = 'margin-bottom: 0.5rem; padding-left: ' + (isSub ? '0.85rem' : '0') + ';';
 
           var a = document.createElement('a');
           a.href = '#' + h.id;
           a.textContent = h.textContent.replace(/\(Full list.*\)/i, '').trim();
-          a.style.cssText = 'color: #444; text-decoration: none; display: block;';
-          a.onmouseover = function() { a.style.color = '#000'; a.style.textDecoration = 'underline'; };
-          a.onmouseout = function() { a.style.color = '#444'; a.style.textDecoration = 'none'; };
 
           li.appendChild(a);
           tocList.appendChild(li);
