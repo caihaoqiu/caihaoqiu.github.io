@@ -117,8 +117,7 @@ redirect_from:
 * Outstanding Bachelor thesis, Shanghai Jiao Tong University, 2021
 * China National Scholarship, Ministry of Education of PR China, 2020
 
-Professional Activities
-======
+### Professional Activities
 Manuscript reviewer for journals: 
 * Proceedings of the National Academy of Sciences
 * Acta Materialia
