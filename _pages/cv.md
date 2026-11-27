@@ -10,6 +10,20 @@ redirect_from:
 {% include base_path %}
 
 <style>
+  .page__title,
+  .archive .page__title,
+  .page__content > h1:first-child,
+  .archive > h1:first-child {
+    display: none !important;
+  }
+
+  .archive h2:first-of-type,
+  .archive h3:first-of-type,
+  .page__content h2:first-of-type,
+  .page__content h3:first-of-type {
+    margin-top: 0.2em !important;
+  }
+  
   /* Main Page Title (About Me font size + spacing) */
   .page__content h1,
   .archive .page__title {
