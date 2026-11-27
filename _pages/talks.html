@@ -2,7 +2,7 @@
 layout: archive
 title: "Talks and presentations"
 permalink: /talks/
-author_profile: false
+author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
@@ -24,22 +24,66 @@ author_profile: false
   .page__content h3:first-of-type {
     margin-top: 0.2em !important;
   }
+
+  .talk-year-heading {
+    font-size: 1.02em !important;
+    font-weight: 700 !important;
+    color: #444 !important;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+    margin-top: 1.0em !important;
+    margin-bottom: 0.45em !important;
+  }
 </style>
+
+{% assign sorted_talks = site.talks | sort: 'date' | reverse %}
 
 <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #f2f3f3; padding-bottom: 0.3em; margin-top: 0.8em; margin-bottom: 0.8em;">
   <h2 style="margin: 0; border-bottom: none; padding-bottom: 0;">Invited Talks</h2>
 </div>
-{% for post in site.talks reversed %}
+
+{% assign invited_years = "" | split: "" %}
+{% for post in sorted_talks %}
   {% if post.type contains "Invited" %}
-    {% include archive-single.html %}
+    {% assign y = post.date | date: "%Y" %}
+    {% unless invited_years contains y %}
+      {% assign invited_years = invited_years | push: y %}
+    {% endunless %}
   {% endif %}
+{% endfor %}
+
+{% for year in invited_years %}
+  <h3 class="talk-year-heading">{{ year }}</h3>
+  {% for post in sorted_talks %}
+    {% assign post_year = post.date | date: "%Y" %}
+    {% if post.type contains "Invited" and post_year == year %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
 <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #f2f3f3; padding-bottom: 0.3em; margin-top: 1.8em; margin-bottom: 0.8em;">
   <h2 style="margin: 0; border-bottom: none; padding-bottom: 0;">Oral Presentations</h2>
 </div>
-{% for post in site.talks reversed %}
+
+{% assign oral_years = "" | split: "" %}
+{% for post in sorted_talks %}
   {% unless post.type contains "Invited" %}
-    {% include archive-single.html %}
+    {% assign y = post.date | date: "%Y" %}
+    {% unless oral_years contains y %}
+      {% assign oral_years = oral_years | push: y %}
+    {% endunless %}
   {% endunless %}
+{% endfor %}
+
+{% for year in oral_years %}
+  <h3 class="talk-year-heading">{{ year }}</h3>
+  {% for post in sorted_talks %}
+    {% assign post_year = post.date | date: "%Y" %}
+    {% unless post.type contains "Invited" %}
+      {% if post_year == year %}
+        {% include archive-single.html %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
 {% endfor %}
