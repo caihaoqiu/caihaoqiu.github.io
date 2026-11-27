@@ -161,7 +161,7 @@ We modified the curvature-driven grain growth with a defect-dynamics-based frame
 5. **C. Qiu**, M. Salvalaglio, D. J. Srolovitz, and J. Han. “Interface faceting–defaceting mediated by disconnections.” *Acta Materialia*, 251 (2023) 118880.
 
 
-### Interface-Mediated Plasticity and Recrystallization Mechanism
+### Interface-Mediated Plasticity and Recrystallization
 
 
 <div class="fig-carousel">
