@@ -8,6 +8,9 @@
   {% endif %}
 {% else %}
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     @media (min-width: 64em) {
       #auto-toc-sidebar {
         padding-right: 1.8rem !important;
@@ -38,15 +41,22 @@
       padding-bottom: 0.3rem !important;
     }
     #auto-toc-list a {
-      font-size: 0.75rem !important;
+      font-size: 0.88rem !important;
       line-height: 1.42 !important;
-      color: #444 !important;
+      color: #666 !important;
       text-decoration: none !important;
       display: block !important;
+      padding-left: 0.5rem !important;
+      border-left: 2px solid transparent !important;
+      transition: all 0.2s ease !important;
     }
     #auto-toc-list a:hover {
+      color: #111 !important;
+    }
+    #auto-toc-list a.toc-active {
       color: #000 !important;
-      text-decoration: underline !important;
+      font-weight: 700 !important;
+      border-left: 2px solid #000 !important;
     }
   </style>
 
@@ -79,6 +89,7 @@
 
         tocList.innerHTML = '';
         var hasTop = headings.some(function(x) { return x.tagName === 'H1' || x.tagName === 'H2'; });
+        var links = [];
 
         headings.forEach(function(h, idx) {
           if (!h.id) {
@@ -86,7 +97,7 @@
           }
           var li = document.createElement('li');
           var isSub = (h.tagName === 'H3' && hasTop);
-          li.style.cssText = 'margin-bottom: 0.45rem; padding-left: ' + (isSub ? '0.8rem' : '0') + ';';
+          li.style.cssText = 'margin-bottom: 0.45rem; padding-left: ' + (isSub ? '0.75rem' : '0') + ';';
 
           var a = document.createElement('a');
           a.href = '#' + h.id;
@@ -94,7 +105,34 @@
 
           li.appendChild(a);
           tocList.appendChild(li);
+          links.push({ heading: h, link: a });
         });
+
+        function onScroll() {
+          var scrollPos = window.scrollY || document.documentElement.scrollTop;
+          var current = links[0];
+
+          for (var i = 0; i < links.length; i++) {
+            var top = links[i].heading.getBoundingClientRect().top + scrollPos - 110;
+            if (scrollPos >= top) {
+              current = links[i];
+            }
+          }
+
+          if ((window.innerHeight + scrollPos) >= document.body.offsetHeight - 10) {
+            current = links[links.length - 1];
+          }
+
+          links.forEach(function(item) {
+            item.link.classList.remove('toc-active');
+          });
+          if (current) {
+            current.link.classList.add('toc-active');
+          }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
       }
 
       if (document.readyState === 'loading') {
