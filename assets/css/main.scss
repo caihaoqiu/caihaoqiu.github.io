@@ -36,3 +36,29 @@
     "layout/archive",
     "layout/sidebar"
 ;
+
+/* Compact Footer Size */
+.page__footer {
+  margin-top: 1.5em !important;
+  padding-top: 0.6em !important;
+  padding-bottom: 0.6em !important;
+}
+
+.page__footer footer {
+  margin-top: 0 !important;
+  padding-top: 0.4em !important;
+  padding-bottom: 0.4em !important;
+}
+
+.page__footer-follow ul {
+  margin-bottom: 0.3em !important;
+}
+
+.page__footer-follow li {
+  font-size: 0.72em !important;
+}
+
+.page__footer-copyright {
+  font-size: 0.65em !important;
+  line-height: 1.35 !important;
+}
