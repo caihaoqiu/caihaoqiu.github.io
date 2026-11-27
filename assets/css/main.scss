@@ -37,7 +37,16 @@
     "layout/sidebar"
 ;
 
-/* Hide the bottom footer completely */
-.page__footer {
+/* Completely hide the footer and remove sticky footer spacing */
+.page__footer,
+footer,
+#footer {
   display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+}
+
+body {
+  margin-bottom: 2em !important;
+  padding-bottom: 0 !important;
 }
