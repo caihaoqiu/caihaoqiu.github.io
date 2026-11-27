@@ -19,42 +19,51 @@
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var tocList = document.getElementById('auto-toc-list');
-      var sidebar = document.getElementById('auto-toc-sidebar');
-      if (!tocList || !sidebar) return;
+    (function() {
+      function buildToc() {
+        var tocList = document.getElementById('auto-toc-list');
+        var sidebar = document.getElementById('auto-toc-sidebar');
+        if (!tocList || !sidebar) return;
 
-      // Collect visible section headings inside the main content area
-      var container = document.querySelector('.archive') || document.querySelector('.page__content');
-      if (!container) return;
+        var headings = Array.from(document.querySelectorAll('.page__content h1, .page__content h2, .page__content h3, .archive h1, .archive h2, .archive h3')).filter(function(h) {
+          if (h.closest('.sidebar') || h.closest('.masthead') || h.closest('.page__footer')) return false;
+          if (h.classList.contains('page__title') || h.classList.contains('archive__item-title')) return false;
+          return h.textContent.trim().length > 0;
+        });
 
-      var headings = Array.from(container.querySelectorAll('h1, h2, h3')).filter(function(h) {
-        return h.offsetParent !== null && !h.classList.contains('page__title') && h.textContent.trim().length > 0;
-      });
+        if (headings.length === 0) {
+          sidebar.style.display = 'none';
+          return;
+        }
 
-      if (headings.length === 0) {
-        sidebar.style.display = 'none';
-        return;
+        tocList.innerHTML = '';
+        var hasTop = headings.some(function(x) { return x.tagName === 'H1' || x.tagName === 'H2'; });
+
+        headings.forEach(function(h, idx) {
+          if (!h.id) {
+            h.id = 'sec-' + idx + '-' + h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
+          }
+          var li = document.createElement('li');
+          var isSub = (h.tagName === 'H3' && hasTop);
+          li.style.cssText = 'margin-bottom: 0.45rem; padding-left: ' + (isSub ? '0.85rem' : '0') + ';';
+
+          var a = document.createElement('a');
+          a.href = '#' + h.id;
+          a.textContent = h.textContent.replace(/\(Full list.*\)/i, '').trim();
+          a.style.cssText = 'color: #444; text-decoration: none; display: block;';
+          a.onmouseover = function() { a.style.color = '#000'; a.style.textDecoration = 'underline'; };
+          a.onmouseout = function() { a.style.color = '#444'; a.style.textDecoration = 'none'; };
+
+          li.appendChild(a);
+          tocList.appendChild(li);
+        });
       }
 
-      headings.forEach(function(h, idx) {
-        if (!h.id) {
-          h.id = 'section-' + idx + '-' + h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
-        }
-        var li = document.createElement('li');
-        var isSub = (h.tagName === 'H3' && headings.some(function(x) { return x.tagName === 'H2' || x.tagName === 'H1'; }));
-        li.style.cssText = 'margin-bottom: 0.4rem; padding-left: ' + (isSub ? '0.85rem' : '0') + ';';
-
-        var a = document.createElement('a');
-        a.href = '#' + h.id;
-        a.textContent = h.textContent.replace(/\(Full list.*\)/i, '').trim();
-        a.style.cssText = 'color: #444; text-decoration: none; display: block; transition: color 0.2s;';
-        a.onmouseover = function() { a.style.color = '#000'; a.style.textDecoration = 'underline'; };
-        a.onmouseout = function() { a.style.color = '#444'; a.style.textDecoration = 'none'; };
-
-        li.appendChild(a);
-        tocList.appendChild(li);
-      });
-    });
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', buildToc);
+      } else {
+        buildToc();
+      }
+    })();
   </script>
 {% endif %}
